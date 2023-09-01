@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pay-secure</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="../assets/style/css/frontpage.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+     <!-- date range css start -->
+     <!-- <link href="../assets/lib/date-rangepicker/css/plugins.bundle.css" rel="stylesheet" type="text/css"/> -->
+     <!-- <link href="../assets/lib/date-rangepicker/css/style.bundle.css" rel="stylesheet" type="text/css"/> -->
+</head>
+
+<body class="">
+  <header class="top-header">
+    <div class="leftmob-menu">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    <div class="left-logo">
+        <a href="../Dashboard/Dashboard-page.html">
+            <img src="../assets/images/icon/PaySecure-logo01.png" alt="" />
+        </a>
+    </div>
+    <div class="right-profile">
+        <div class="user-profile">
+            <div class="profile-name">DB</div>
+            <div class="profile-fullname">
+                <p>dbadmin1</p>
+                <div class="dropdown admin-box">
+                    <a href="javascript:void(0)" class="superadmin-dropdown" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Super Admin <i class="fa-solid fa-angle-down"></i>
+                    </a>
+                    <ul class="dropdown-menu admin-list" aria-labelledby="dropdownMenuButton1">
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <i class="fa-regular fa-user"></i>
+                                <span>Profile</span></a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <i class="fa-regular fa-envelope"></i>
+                                <span>My Messages</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <i class="fa-solid fa-lock"></i>
+                                <span>Lock Screen</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="../Change-password/Change-password.html">
+                                <i class="fa-solid fa-key"></i>
+                                <span>Change Password</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+  <!-- header end -->
+  <section class="pay-mainarea">
+    <div class="left-menubar">
+      <div class="sidemenu-close">
+          <i class="fa-solid fa-angle-left"></i>
+      </div>
+      <ul class="mainmenu-list">
+        <li class="">
+            <a href="../Dashboard/Dashboard-page.html">
+                <i class="fa-solid fa-table-cells-large"></i>
+                <span>Dashboard</span>
+            </a>
+        </li>
+        <li>
+            <a href="../Manage-roles/Manage-Roles.html">
+                <i class="fa-regular fa-user"></i>
+                <span>Manage Roles</span>
+            </a>
+        </li>
+        <li>
+            <a href="../Global-setting/Global-setting.html">
+                <i class="fa-solid fa-gear"></i>
+                <span>Global Setting</span>
+            </a>
+        </li>
+        <li>
+            <a href="../Merchant-limits/Merchant-Limits.html">
+                <i class="fa-solid fa-suitcase"></i>
+                <span>Merchant limits</span>
+            </a>
+        </li>
+        <li class="">
+            <a href="../Banks/Bank-page.html">
+                <i class="fa-solid fa-building-columns"></i>
+                <span>Banks</span>
+            </a>
+        </li>
+        <li class="inr-list">
+            <a href="javascript:void(0)" class="inr-link">
+                <i class="fa-solid fa-box"></i>
+                <span>Charges</span>
+                <i class="fa-solid fa-angle-down dwn-arr"></i>
+            </a>
+            <ul class="innerMenu-list">
+                <li>
+                    <a href="../Charges/Bank-charges.html">
+                        <span>Bank</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../Charges/Merchants-charges.html">
+                        <span>Merchant</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="../Transactions/Transactions.html">
+                <i class="fa-regular fa-credit-card"></i>
+                <span>Transactions</span>
+            </a>
+        </li>
+        <li class="inr-list">
+          <a href="javascript:void(0)" class="inr-link">
+              <i class="fa-regular fa-user"></i>
+              <span>Profile Intelligence</span>
+              <i class="fa-solid fa-angle-down dwn-arr"></i>
+          </a>
+          <ul class="innerMenu-list">
+              <li>
+                  <a href="../Profile-intelligence/Strategies.html">
+                      <span>Strategies</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="../Profile-intelligence/Rule-Sets.html">
+                      <span>RuleSets</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="../Profile-intelligence/Decision-Matrix.html">
+                      <span>Decision Matrix</span>
+                  </a>
+              </li>
+          </ul>
+      </li>
+        <li>
+            <a href="../Analytic-report/Analytic-report.html">
+                <i class="fa-solid fa-chart-simple"></i>
+                <span>Analytic Report</span>
+            </a>
+        </li>
+        <li>
+            <a href="../Merchants/Merchants.html">
+                <i class="fa-regular fa-clipboard"></i>
+                <span>Merchants</span>
+            </a>
+        </li>
+        <li>
+            <a href="../MID-Limits/MID-Limits.html">
+                <i class="fa-brands fa-codepen"></i>
+                <span>MID Limits</span>
+            </a>
+        </li>
+        <li class="inr-list">
+            <a href="javascript:void(0)" class="inr-link">
+                <i class="fa-solid fa-box"></i>
+                <span>Blockings</span>
+                <i class="fa-solid fa-angle-down dwn-arr"></i>
+            </a>
+            <ul class="innerMenu-list">
+                <li>
+                    <a href="../Blockings/MID.html">
+                        <span>MID</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../Blockings/BIN.html">
+                        <span>BIN</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../Blockings/CARD.html">
+                        <span>Card</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../Blockings/Customer-profile.html">
+                        <span>Customer Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../Blockings/Country.html">
+                        <span>Country</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="active">
+            <a href="../Settlements/Settlements.html">
+                <i class="fa-regular fa-square-check"></i>
+                <span>Settlements</span>
+            </a>
+        </li>
+        <li class="inr-list">
+          <a href="javascript:void(0)" class="inr-link">
+              <i class="fa-solid fa-box"></i>
+              <span>Utility</span>
+              <i class="fa-solid fa-angle-down dwn-arr"></i>
+          </a>
+          <ul class="innerMenu-list pdlfm">
+              <li>
+                  <a href="#">
+                      <span>Email Risk Analysis</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="../Manual-refunds/Manual-refunds.html">
+                      <span>Manual Refund</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <span>Process Settlement / Chargeback</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="../Utility/Profile-scoring.html">
+                      <span>Profile Scoring</span>
+                  </a>
+              </li>
+          </ul>
+      </li>
+      <li class="inr-list">
+        <a href="javascript:void(0)" class="inr-link">
+            <i class="fa-solid fa-yin-yang"></i>
+            <span>P2p</span>
+            <i class="fa-solid fa-angle-down dwn-arr"></i>
+        </a>
+        <ul class="innerMenu-list pdlfm">
+            <li>
+                <a href="../p2p/p2p-Dashboard.html">
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="../p2p/Top-deposite.html">
+                    <span>Top Deposite</span>
+                </a>
+            </li>
+            <li>
+                <a href="../p2p/Top-withdrawal.html">
+                    <span>Top Withdrawal</span>
+                </a>
+            </li>
+            <li>
+                <a href="../p2p/settlements.html">
+                    <span>Settlements</span>
+                </a>
+            </li>
+            <li>
+                <a href="../p2p/Transections.html">
+                    <span>Transactions</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+        <li>
+            <a href="#">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <span>Alert Config</span>
+            </a>
+        </li>
+    </ul>
+  </div>
+    <!-- left side menu end  -->
+    <div class="right-sidedata">
+      <div class="heading-bartitle">
+        <div class="left-bar">
+          <h1>Settlements</h1>
+          <a href="#"><i class="fa-solid fa-table-cells-large"></i>
+            <span>Dashboard</span></a>
+        </div>
+        <div class="right-bar"></div>
+      </div>
+      <!-- heading bar end -->
+      <div class="py-main-contain">
+        <div class="row pagetitle-row">
+          <div class="col">
+            <div class="titleHead-colm">
+              <i class="fa-regular fa-square-check"></i>
+              <h2>STATISTICS</h2>
+          </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card dash-cardbox">
+              <div class="card-body">
+                <form action="">
+                  <div class="row">
+                    <div class="form-group col-md-3">
+                      <label>Settlement ID</label>
+                      <input type="text" class="form-control" placeholder="Settlement id" name="" />
+                    </div>
+                    <div class="form-group col-md-3">
+                      <label>Select Status</label>
+                      <div class="custom-select">
+                        <select name="" class="form-control" id="">
+                          <option>Select Status</option>
+                          <option value="">Pending</option>
+                          <option value="">Settled</option>
+                        </select>
+                        <i class="fa-solid fa-angle-down"></i>
+                      </div>
+                    </div>
+                    <div class="form-group col-md-3">
+                      <label>Select Merchant</label>
+                      <div class="custom-select">
+                        <select name="" class="form-control" id="">
+                          <option>Select Merchant</option>
+                          <option value="">Test 1</option>
+                          <option value="">Test 2</option>
+                        </select>
+                        <i class="fa-solid fa-angle-down"></i>
+                      </div>
+                    </div>
+                    <div class="form-group col-md-3">
+                      <label>Date Range</label>
+                      <input type="text" class="form-control" id="settl-daterange" placeholder="Pick date rage" name="" />
+                    </div>
+                    <div class="form-group col-md-3">
+                      <label>Sort On</label>
+                      <div class="custom-select">
+                        <select name="" class="form-control" id="">
+                          <option value="">Sort On</option>
+                          <option value="amountToBePaid">
+                            AmountToBePaid
+                          </option>
+                          <option value="chargeBackAmt">ChargeBackAmt</option>
+                          <option value="chargebackFees">
+                            ChargebackFees
+                          </option>
+                          <option value="mdr">Mdr</option>
+                          <option value="merchantSettlementDate">
+                            MerchantSettlementDate
+                          </option>
+                          <option value="noOfChargeBack">
+                            NoOfChargeBack
+                          </option>
+                          <option value="noOfRefund">NoOfRefund</option>
+                          <option value="noOfSuccessfulTransaction">
+                            NoOfSuccessfulTransaction
+                          </option>
+                          <option value="noOfTransactions">
+                            NoOfTransactions
+                          </option>
+                          <option value="pre_due">Pre_due</option>
+                          <option value="refundAmt">RefundAmt</option>
+                          <option value="refundFees">RefundFees</option>
+                          <option value="releasedRollingReserved">
+                            ReleasedRollingReserved
+                          </option>
+                          <option value="reservedRolling">
+                            ReservedRolling
+                          </option>
+                          <option value="totalPayment">TotalPayment</option>
+                          <option value="transactionFees">
+                            TransactionFees
+                          </option>
+                        </select>
+                        <i class="fa-solid fa-angle-down"></i>
+                      </div>
+                    </div>
+                    <div class="form-group col-md-3">
+                      <label>Short By</label>
+                      <div class="custom-select">
+                        <select name="" class="form-control" id="">
+                          <option>Short By</option>
+                          <option value="">Ascending</option>
+                          <option value="">Descending</option>
+                        </select>
+                        <i class="fa-solid fa-angle-down"></i>
+                      </div>
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label class="invisible">btn</label>
+                      <button class="btn btn-primary d-block">Submit</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- col end -->
+        </div>
+        <!-- row end -->
+        <div class="table-responsive settlement-table">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">ORDER START DATE</th>
+                <th scope="col">ORDER END DATE</th>
+                <th scope="col">SETTLEMENT DATE</th>
+                <th scope="col" class="settle-td">
+                  DUE SETTLEMENT AMOUNT DETAILS
+                </th>
+                <th scope="col" class="amt-period">
+                  AMOUNT FROM THIS PERIOD
+                </th>
+                <th scope="col">STATUS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <span>2023-03-26</span>
+                </td>
+                <td>
+                  <span>2023-03-30</span>
+                </td>
+                <td>
+                  <span>2023-04-06</span>
+                </td>
+                <td class="due-settleamt">
+                  <div class="settle-inr">
+                    <span class="total-tagpy"> (totalPayment : 0) </span> =
+                    <span class="sub-tagpy">(mdr : 0)</span> -
+                    <span class="sub-tagpy"> (reservedRolling : 0)</span> -
+                    <span class="sub-tagpy"> (transactionFees : 0)</span> -
+                    <span class="sub-tagpy"> (refundFees : 0) </span> -
+                    <span class="sub-tagpy"> (chargebackFees : 0) </span> -
+                    <span class="sub-tagpy"> (refundAmt : 0) </span> -
+                    <span class="sub-tagpy"> (chargeBackAmt : 0) </span> -
+                    <span class="sub-tagpy"> (pre_due : 0) </span> +
+                    <span class="add-tagpy"> (preBalance : 97) </span> +
+                    <span class="add-tagpy">(releasedRollingReserved : 0)
+                    </span>
+                  </div>
+                </td>
+                <td class="amt-txt">
+                  <span>97 USD</span>
+                </td>
+                <td class="vwdel-btn">
+                  <span class="text-green">Carryforwarded</span>
+                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#view-summerymodal">
+                    View Summery
+                  </button>
+                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#settlement-detail-modal">
+                    View Details
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span>2023-03-26</span>
+                </td>
+                <td>
+                  <span>2023-03-30</span>
+                </td>
+                <td>
+                  <span>2023-04-06</span>
+                </td>
+                <td class="due-settleamt">
+                  <div class="settle-inr">
+                    <span class="total-tagpy"> (totalPayment : 0) </span> =
+                    <span class="sub-tagpy">(mdr : 0)</span> -
+                    <span class="sub-tagpy"> (reservedRolling : 0)</span> -
+                    <span class="sub-tagpy"> (transactionFees : 0)</span> -
+                    <span class="sub-tagpy"> (refundFees : 0) </span> -
+                    <span class="sub-tagpy"> (chargebackFees : 0) </span> -
+                    <span class="sub-tagpy"> (refundAmt : 0) </span> -
+                    <span class="sub-tagpy"> (chargeBackAmt : 0) </span> -
+                    <span class="sub-tagpy"> (pre_due : 0) </span> +
+                    <span class="add-tagpy"> (preBalance : 97) </span> +
+                    <span class="add-tagpy">(releasedRollingReserved : 0)
+                    </span>
+                  </div>
+                </td>
+                <td class="amt-txt">
+                  <span>97 USD</span>
+                </td>
+                <td class="vwdel-btn">
+                  <span class="text-red">Carryforwarded</span>
+                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#view-summerymodal">
+                    View Summery
+                  </button>
+                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#settlement-modal">
+                    Settlement
+                  </button>
+                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#settlement-detail-modal">
+                    View Details
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span>2023-03-26</span>
+                </td>
+                <td>
+                  <span>2023-03-30</span>
+                </td>
+                <td>
+                  <span>2023-04-06</span>
+                </td>
+                <td class="due-settleamt">
+                  <div class="settle-inr">
+                    <span class="total-tagpy"> (totalPayment : 0) </span> =
+                    <span class="sub-tagpy">(mdr : 0)</span> -
+                    <span class="sub-tagpy"> (reservedRolling : 0)</span> -
+                    <span class="sub-tagpy"> (transactionFees : 0)</span> -
+                    <span class="sub-tagpy"> (refundFees : 0) </span> -
+                    <span class="sub-tagpy"> (chargebackFees : 0) </span> -
+                    <span class="sub-tagpy"> (refundAmt : 0) </span> -
+                    <span class="sub-tagpy"> (chargeBackAmt : 0) </span> -
+                    <span class="sub-tagpy"> (pre_due : 0) </span> +
+                    <span class="add-tagpy"> (preBalance : 97) </span> +
+                    <span class="add-tagpy">(releasedRollingReserved : 0)
+                    </span>
+                  </div>
+                </td>
+                <td class="amt-txt">
+                  <span>97 USD</span>
+                </td>
+                <td class="vwdel-btn">
+                  <span class="text-green">Carryforwarded</span>
+                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#view-summerymodal">
+                    View Summery
+                  </button>
+                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#settlement-detail-modal">
+                    View Details
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span>2023-03-26</span>
+                </td>
+                <td>
+                  <span>2023-03-30</span>
+                </td>
+                <td>
+                  <span>2023-04-06</span>
+                </td>
+                <td class="due-settleamt">
+                  <div class="settle-inr">
+                    <span class="total-tagpy"> (totalPayment : 0) </span> =
+                    <span class="sub-tagpy">(mdr : 0)</span> -
+                    <span class="sub-tagpy"> (reservedRolling : 0)</span> -
+                    <span class="sub-tagpy"> (transactionFees : 0)</span> -
+                    <span class="sub-tagpy"> (refundFees : 0) </span> -
+                    <span class="sub-tagpy"> (chargebackFees : 0) </span> -
+                    <span class="sub-tagpy"> (refundAmt : 0) </span> -
+                    <span class="sub-tagpy"> (chargeBackAmt : 0) </span> -
+                    <span class="sub-tagpy"> (pre_due : 0) </span> +
+                    <span class="add-tagpy"> (preBalance : 97) </span> +
+                    <span class="add-tagpy">(releasedRollingReserved : 0)
+                    </span>
+                  </div>
+                </td>
+                <td class="amt-txt">
+                  <span>97 USD</span>
+                </td>
+                <td class="vwdel-btn">
+                  <span class="text-red">Carryforwarded</span>
+                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#view-summerymodal">
+                    View Summery
+                  </button>
+                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#settlement-modal">
+                    Settlement
+                  </button>
+                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#settlement-detail-modal">
+                    View Details
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span>2023-03-26</span>
+                </td>
+                <td>
+                  <span>2023-03-30</span>
+                </td>
+                <td>
+                  <span>2023-04-06</span>
+                </td>
+                <td class="due-settleamt">
+                  <div class="settle-inr">
+                    <span class="total-tagpy"> (totalPayment : 0) </span> =
+                    <span class="sub-tagpy">(mdr : 0)</span> -
+                    <span class="sub-tagpy"> (reservedRolling : 0)</span> -
+                    <span class="sub-tagpy"> (transactionFees : 0)</span> -
+                    <span class="sub-tagpy"> (refundFees : 0) </span> -
+                    <span class="sub-tagpy"> (chargebackFees : 0) </span> -
+                    <span class="sub-tagpy"> (refundAmt : 0) </span> -
+                    <span class="sub-tagpy"> (chargeBackAmt : 0) </span> -
+                    <span class="sub-tagpy"> (pre_due : 0) </span> +
+                    <span class="add-tagpy"> (preBalance : 97) </span> +
+                    <span class="add-tagpy">(releasedRollingReserved : 0)
+                    </span>
+                  </div>
+                </td>
+                <td class="amt-txt">
+                  <span>97 USD</span>
+                </td>
+                <td class="vwdel-btn">
+                  <span class="text-green">Carryforwarded</span>
+                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#view-summerymodal">
+                    View Summery
+                  </button>
+                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#settlement-detail-modal">
+                    View Details
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span>2023-03-26</span>
+                </td>
+                <td>
+                  <span>2023-03-30</span>
+                </td>
+                <td>
+                  <span>2023-04-06</span>
+                </td>
+                <td class="due-settleamt">
+                  <div class="settle-inr">
+                    <span class="total-tagpy"> (totalPayment : 0) </span> =
+                    <span class="sub-tagpy">(mdr : 0)</span> -
+                    <span class="sub-tagpy"> (reservedRolling : 0)</span> -
+                    <span class="sub-tagpy"> (transactionFees : 0)</span> -
+                    <span class="sub-tagpy"> (refundFees : 0) </span> -
+                    <span class="sub-tagpy"> (chargebackFees : 0) </span> -
+                    <span class="sub-tagpy"> (refundAmt : 0) </span> -
+                    <span class="sub-tagpy"> (chargeBackAmt : 0) </span> -
+                    <span class="sub-tagpy"> (pre_due : 0) </span> +
+                    <span class="add-tagpy"> (preBalance : 97) </span> +
+                    <span class="add-tagpy">(releasedRollingReserved : 0)
+                    </span>
+                  </div>
+                </td>
+                <td class="amt-txt">
+                  <span>97 USD</span>
+                </td>
+                <td class="vwdel-btn">
+                  <span class="text-red">Carryforwarded</span>
+                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#view-summerymodal">
+                    View Summery
+                  </button>
+                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#settlement-modal">
+                    Settlement
+                  </button>
+                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#settlement-detail-modal">
+                    View Details
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span>2023-03-26</span>
+                </td>
+                <td>
+                  <span>2023-03-30</span>
+                </td>
+                <td>
+                  <span>2023-04-06</span>
+                </td>
+                <td class="due-settleamt">
+                  <div class="settle-inr">
+                    <span class="total-tagpy"> (totalPayment : 0) </span> =
+                    <span class="sub-tagpy">(mdr : 0)</span> -
+                    <span class="sub-tagpy"> (reservedRolling : 0)</span> -
+                    <span class="sub-tagpy"> (transactionFees : 0)</span> -
+                    <span class="sub-tagpy"> (refundFees : 0) </span> -
+                    <span class="sub-tagpy"> (chargebackFees : 0) </span> -
+                    <span class="sub-tagpy"> (refundAmt : 0) </span> -
+                    <span class="sub-tagpy"> (chargeBackAmt : 0) </span> -
+                    <span class="sub-tagpy"> (pre_due : 0) </span> +
+                    <span class="add-tagpy"> (preBalance : 97) </span> +
+                    <span class="add-tagpy">(releasedRollingReserved : 0)
+                    </span>
+                  </div>
+                </td>
+                <td class="amt-txt">
+                  <span>97 USD</span>
+                </td>
+                <td class="vwdel-btn">
+                  <span class="text-green">Carryforwarded</span>
+                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#view-summerymodal">
+                    View Summery
+                  </button>
+                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#settlement-detail-modal">
+                    View Details
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span>2023-03-26</span>
+                </td>
+                <td>
+                  <span>2023-03-30</span>
+                </td>
+                <td>
+                  <span>2023-04-06</span>
+                </td>
+                <td class="due-settleamt">
+                  <div class="settle-inr">
+                    <span class="total-tagpy"> (totalPayment : 0) </span> =
+                    <span class="sub-tagpy">(mdr : 0)</span> -
+                    <span class="sub-tagpy"> (reservedRolling : 0)</span> -
+                    <span class="sub-tagpy"> (transactionFees : 0)</span> -
+                    <span class="sub-tagpy"> (refundFees : 0) </span> -
+                    <span class="sub-tagpy"> (chargebackFees : 0) </span> -
+                    <span class="sub-tagpy"> (refundAmt : 0) </span> -
+                    <span class="sub-tagpy"> (chargeBackAmt : 0) </span> -
+                    <span class="sub-tagpy"> (pre_due : 0) </span> +
+                    <span class="add-tagpy"> (preBalance : 97) </span> +
+                    <span class="add-tagpy">(releasedRollingReserved : 0)
+                    </span>
+                  </div>
+                </td>
+                <td class="amt-txt">
+                  <span>97 USD</span>
+                </td>
+                <td class="vwdel-btn">
+                  <span class="text-red">Carryforwarded</span>
+                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#view-summerymodal">
+                    View Summery
+                  </button>
+                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#settlement-modal">
+                    Settlement
+                  </button>
+                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#settlement-detail-modal">
+                    View Details
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- right side data end -->
+  </section>
+  <!-- Button trigger modal -->
+
+  <!-- View summery Modal -->
+  <div class="modal pay-modal fade" id="view-summerymodal" tabindex="-1" aria-labelledby="staticBackdropLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">
+            Summary Details
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul class="summery-listdata">
+            <li>
+              <p>SettlementId : 644b923ebc91643f3b9934fd</p>
+            </li>
+            <li>
+              <p>MerchantName : test</p>
+            </li>
+            <li>
+              <p>FromDate : 20230326</p>
+            </li>
+            <li>
+              <p>ToDate : 20230330</p>
+            </li>
+            <li>
+              <p>TotalPayment : 0</p>
+            </li>
+            <li>
+              <p>NoOfTransactions : 0</p>
+            </li>
+            <li>
+              <p>NoOfSuccessfulTransaction : 0</p>
+            </li>
+            <li>
+              <p>NoOfChargeBack : 0</p>
+            </li>
+            <li>
+              <p>RefundAmt : 0</p>
+            </li>
+            <li>
+              <p>ChargeBackAmt : 0</p>
+            </li>
+            <li>
+              <p>RefundFees : 0</p>
+            </li>
+            <li>
+              <p>ChargebackFees : 0</p>
+            </li>
+            <li>
+              <p>TransactionFees : 0</p>
+            </li>
+            <li>
+              <p>Mdr : 0</p>
+            </li>
+            <li>
+              <p>ReservedRolling : 0</p>
+            </li>
+            <li>
+              <p>ReleasedRollingReserved : 0</p>
+            </li>
+            <li>
+              <p>Status : carryforwarded</p>
+            </li>
+            <li>
+              <p>Settlement_bank_ref_id :</p>
+            </li>
+            <li>
+              <p>Settlement_bank_trans_id :</p>
+            </li>
+            <li>
+              <p>Settlement_bank_desc :</p>
+            </li>
+            <li>
+              <p>Settlement_bank_Amt : 0</p>
+            </li>
+            <li>
+              <p>MerchantSettlementDate : 20230406</p>
+            </li>
+            <li>
+              <p>ActualSettlementDate : 20230428</p>
+            </li>
+            <li>
+              <p>Currency : USD</p>
+            </li>
+            <li>
+              <p>AmountToBePaid : 97</p>
+            </li>
+            <li>
+              <p>RollingResReleasedOn : 0</p>
+            </li>
+            <li>
+              <p>Rolling_res_releasedWithId : 0</p>
+            </li>
+            <li>
+              <p>Pre_due : 0</p>
+            </li>
+            <li>
+              <p>CurrentDueSettleWithId : 0</p>
+            </li>
+            <li>
+              <p>PreBalance : 97</p>
+            </li>
+            <li>
+              <p>CurrentBalanceSettleWithId : 644b9242bc91643f3b993500</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Settlement Modal -->
+  <div class="modal pay-modal fade" id="settlement-modal" tabindex="-1" aria-labelledby="staticBackdropLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Settlement</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <h6>Settlement Id : 644b9247bc91643f3b993518</h6>
+            <div class="row">
+              <div class="form-group col-md-12">
+                <input type="text" placeholder="Settlement Bank Account" class="form-control" />
+              </div>
+              <div class="form-group col-md-12">
+                <input type="text" placeholder="Settlement Bank Amount" class="form-control" />
+              </div>
+              <div class="form-group col-md-12">
+                <input type="text" placeholder="Bank Transaction Id" class="form-control" />
+              </div>
+              <div class="form-group col-md-12">
+                <input type="text" placeholder="Bank Description" class="form-control" />
+              </div>
+              <div class="form-group col-md-12">
+                <button class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- view detail Modal -->
+  <div class="modal pay-modal fade" id="settlement-detail-modal" tabindex="-1" aria-labelledby="staticBackdropLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">
+            Settlement Details
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="com-settledata">
+            <ul class="settledata-list mrc-list">
+              <li>
+                <h6>Merchant :</h6>
+                <p>test</p>
+              </li>
+              <li>
+                <h6>Status :</h6>
+                <p>pending</p>
+              </li>
+              <li class="settl-lst">
+                <h6>Settlement Id : </h6>
+                <p>644b9247bc91643f3b993518</p>
+              </li>
+              <li>
+                <h6>Currency :</h6>
+                <p>USD</p>
+              </li>
+            </ul>
+            <!-- list end -->
+            <ul class="settledata-list fl-wdlst">
+              <li>
+                <h2>Settlement Lists</h2>
+              </li>
+            </ul>
+            <ul class="settledata-list cal-prd">
+              <li>
+                <h6>Calculate Period :</h6>
+              </li>
+              <li>
+                <h6>Start Date :</h6>
+                <p>2023-04-03</p>
+              </li>
+              <li>
+                <h6>End Date :</h6>
+                <p>2023-04-07</p>
+              </li>
+              <li>
+                <h6>Settlement Date :</h6>
+                <p>2023-04-14</p>
+              </li>
+            </ul>
+            <!-- list end -->
+
+            <ul class="settledata-list fl-wdlst">
+              <li>
+                <h2>Settlement Lists (amount)</h2>
+              </li>
+            </ul>
+            <ul class="settledata-list stm-amttp">
+              <li>
+                <h6>Total Payment :</h6>
+                <p>1100</p>
+              </li>
+              <li>
+                <h6>Charge Back Amt :</h6>
+                <p>0</p>
+              </li>
+              <li>
+                <h6>Refund Amount :</h6>
+                <p>200</p>
+              </li>
+              <li>
+                <h6>Charge Back Fees :</h6>
+                <p>0</p>
+              </li>
+              <li>
+                <h6>MDR :</h6>
+                <p>66</p>
+              </li>
+              <li>
+                <h6>Reserved Rolling :</h6>
+                <p>72.36</p>
+              </li>
+              <li>
+                <h6>Pre Due :</h6>
+                <p>0</p>
+              </li>
+              <li>
+                <h6>Transaction Fees :</h6>
+                <p>26</p>
+              </li>
+              <li>
+                <h6>Amount To Be Paid :</h6>
+                <p>829</p>
+              </li>
+              <li>
+                <h6>Refund Fees :</h6>
+                <p>4</p>
+              </li>
+              <li>
+                <h6>Previous Balance :</h6>
+                <p>97</p>
+              </li>
+              <li>
+                <h6>Released Rolling Reserve :</h6>
+                <p>1.1</p>
+              </li>
+              <li>
+              </li>
+              <li>
+              </li>
+            </ul>
+
+            <ul class="settledata-list fl-wdlst">
+              <li>
+                <h2>Settlement Lists (count)</h2>
+              </li>
+            </ul>
+            <ul class="settledata-list">
+              <li>
+                <h6>No of Transactions :</h6>
+                <p>26</p>
+              </li>
+              <li>
+                <h6>No of Refund :</h6>
+                <p>2</p>
+              </li>
+              <li>
+                <h6>No of Charge Back :</h6>
+                <p>0</p>
+              </li>
+              <li>
+                <h6>No of Successfull Trans :</h6>
+                <p>0</p>
+              </li>
+            </ul>
+
+            <ul class="settledata-list fl-wdlst">
+              <li>
+                <h2>Settlement Lists (bank details)</h2>
+              </li>
+            </ul>
+            <ul class="settledata-list bnk-dtls">
+              <li>
+                <h6>Settlement Bank Ref Id :</h6>
+                <p>01</p>
+              </li>
+              <li>
+                <h6>Settlement Bank Trans Id :</h6>
+                <p>02</p>
+              </li>
+              <li>
+                <h6>Settlement Bank Desc :</h6>
+                <p>100</p>
+              </li>
+              <li>
+                <h6>Settlement Bank Amt :</h6>
+                <p>0</p>
+              </li>
+              <li>
+                <h6>Rolling Reserve Released With Id :</h6>
+                <p>644db669050f3835e5e20e73</p>
+              </li>
+              <li>
+                <h6>Current Due Settlement With Id :</h6>
+                <p>0</p>
+              </li>
+              <li>
+                <h6>Current Balance Settlement With Id :</h6>
+                <p>0</p>
+              </li>
+              <li>
+              </li>
+            </ul>
+            <h2>Transactions</h2>
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">ORDERID</th>
+                    <th scope="col">AMOUNT</th>
+                    <th scope="col">EMAILID</th>
+                    <th scope="col">ORDERTIME</th>
+                    <th scope="col">CURRENTSTATUS</th>
+                    <th scope="col">SETTLEMENT FOR </th>
+                    <th scope="col">BINNUMBER</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <span>642cd7acdc4db0521a935480</span>
+                    </td>
+                    <td>
+                      <span>5.0</span>
+                    </td>
+                    <td>
+                      <span>test@test.com </span>
+                    </td>
+                    <td>
+                      <span> 5 Apr 2023 02:07</span>
+                    </td>
+                    <td class="amt-txt">
+                      <span> payment_failed</span>
+                    </td>
+                    <td>
+                      <span>TRNASACTION</span>
+                    </td>
+                    <td>
+                      <span>555555XXXXXX4444</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>642cd7acdc4db0521a935480</span>
+                    </td>
+                    <td>
+                      <span>5.0</span>
+                    </td>
+                    <td>
+                      <span>test@test.com </span>
+                    </td>
+                    <td>
+                      <span> 5 Apr 2023 02:07</span>
+                    </td>
+                    <td class="amt-txt">
+                      <span> payment_failed</span>
+                    </td>
+                    <td>
+                      <span>TRNASACTION</span>
+                    </td>
+                    <td>
+                      <span>555555XXXXXX4444</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>642cd7acdc4db0521a935480</span>
+                    </td>
+                    <td>
+                      <span>5.0</span>
+                    </td>
+                    <td>
+                      <span>test@test.com </span>
+                    </td>
+                    <td>
+                      <span> 5 Apr 2023 02:07</span>
+                    </td>
+                    <td class="amt-txt">
+                      <span> payment_failed</span>
+                    </td>
+                    <td>
+                      <span>TRNASACTION</span>
+                    </td>
+                    <td>
+                      <span>555555XXXXXX4444</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>642cd7acdc4db0521a935480</span>
+                    </td>
+                    <td>
+                      <span>5.0</span>
+                    </td>
+                    <td>
+                      <span>test@test.com </span>
+                    </td>
+                    <td>
+                      <span> 5 Apr 2023 02:07</span>
+                    </td>
+                    <td class="amt-txt">
+                      <span> payment_failed</span>
+                    </td>
+                    <td>
+                      <span>TRNASACTION</span>
+                    </td>
+                    <td>
+                      <span>555555XXXXXX4444</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>642cd7acdc4db0521a935480</span>
+                    </td>
+                    <td>
+                      <span>5.0</span>
+                    </td>
+                    <td>
+                      <span>test@test.com </span>
+                    </td>
+                    <td>
+                      <span> 5 Apr 2023 02:07</span>
+                    </td>
+                    <td class="amt-txt">
+                      <span> payment_failed</span>
+                    </td>
+                    <td>
+                      <span>TRNASACTION</span>
+                    </td>
+                    <td>
+                      <span>555555XXXXXX4444</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>642cd7acdc4db0521a935480</span>
+                    </td>
+                    <td>
+                      <span>5.0</span>
+                    </td>
+                    <td>
+                      <span>test@test.com </span>
+                    </td>
+                    <td>
+                      <span> 5 Apr 2023 02:07</span>
+                    </td>
+                    <td class="amt-txt">
+                      <span> payment_failed</span>
+                    </td>
+                    <td>
+                      <span>TRNASACTION</span>
+                    </td>
+                    <td>
+                      <span>555555XXXXXX4444</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>642cd7acdc4db0521a935480</span>
+                    </td>
+                    <td>
+                      <span>5.0</span>
+                    </td>
+                    <td>
+                      <span>test@test.com </span>
+                    </td>
+                    <td>
+                      <span> 5 Apr 2023 02:07</span>
+                    </td>
+                    <td class="amt-txt">
+                      <span> payment_failed</span>
+                    </td>
+                    <td>
+                      <span>TRNASACTION</span>
+                    </td>
+                    <td>
+                      <span>555555XXXXXX4444</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>642cd7acdc4db0521a935480</span>
+                    </td>
+                    <td>
+                      <span>5.0</span>
+                    </td>
+                    <td>
+                      <span>test@test.com </span>
+                    </td>
+                    <td>
+                      <span> 5 Apr 2023 02:07</span>
+                    </td>
+                    <td class="amt-txt">
+                      <span> payment_failed</span>
+                    </td>
+                    <td>
+                      <span>TRNASACTION</span>
+                    </td>
+                    <td>
+                      <span>555555XXXXXX4444</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>642cd7acdc4db0521a935480</span>
+                    </td>
+                    <td>
+                      <span>5.0</span>
+                    </td>
+                    <td>
+                      <span>test@test.com </span>
+                    </td>
+                    <td>
+                      <span> 5 Apr 2023 02:07</span>
+                    </td>
+                    <td class="amt-txt">
+                      <span> payment_failed</span>
+                    </td>
+                    <td>
+                      <span>TRNASACTION</span>
+                    </td>
+                    <td>
+                      <span>555555XXXXXX4444</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>642cd7acdc4db0521a935480</span>
+                    </td>
+                    <td>
+                      <span>5.0</span>
+                    </td>
+                    <td>
+                      <span>test@test.com </span>
+                    </td>
+                    <td>
+                      <span> 5 Apr 2023 02:07</span>
+                    </td>
+                    <td class="amt-txt">
+                      <span> payment_failed</span>
+                    </td>
+                    <td>
+                      <span>TRNASACTION</span>
+                    </td>
+                    <td>
+                      <span>555555XXXXXX4444</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>642cd7acdc4db0521a935480</span>
+                    </td>
+                    <td>
+                      <span>5.0</span>
+                    </td>
+                    <td>
+                      <span>test@test.com </span>
+                    </td>
+                    <td>
+                      <span> 5 Apr 2023 02:07</span>
+                    </td>
+                    <td class="amt-txt">
+                      <span> payment_failed</span>
+                    </td>
+                    <td>
+                      <span>TRNASACTION</span>
+                    </td>
+                    <td>
+                      <span>555555XXXXXX4444</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>642cd7acdc4db0521a935480</span>
+                    </td>
+                    <td>
+                      <span>5.0</span>
+                    </td>
+                    <td>
+                      <span>test@test.com </span>
+                    </td>
+                    <td>
+                      <span> 5 Apr 2023 02:07</span>
+                    </td>
+                    <td class="amt-txt">
+                      <span> payment_failed</span>
+                    </td>
+                    <td>
+                      <span>TRNASACTION</span>
+                    </td>
+                    <td>
+                      <span>555555XXXXXX4444</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>642cd7acdc4db0521a935480</span>
+                    </td>
+                    <td>
+                      <span>5.0</span>
+                    </td>
+                    <td>
+                      <span>test@test.com </span>
+                    </td>
+                    <td>
+                      <span> 5 Apr 2023 02:07</span>
+                    </td>
+                    <td class="amt-txt">
+                      <span> payment_failed</span>
+                    </td>
+                    <td>
+                      <span>TRNASACTION</span>
+                    </td>
+                    <td>
+                      <span>555555XXXXXX4444</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>642cd7acdc4db0521a935480</span>
+                    </td>
+                    <td>
+                      <span>5.0</span>
+                    </td>
+                    <td>
+                      <span>test@test.com </span>
+                    </td>
+                    <td>
+                      <span> 5 Apr 2023 02:07</span>
+                    </td>
+                    <td class="amt-txt">
+                      <span> payment_failed</span>
+                    </td>
+                    <td>
+                      <span>TRNASACTION</span>
+                    </td>
+                    <td>
+                      <span>555555XXXXXX4444</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../assets/lib/bs5/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- fontawesome js start -->
+  <script src="../assets/lib/fw/fontawesome.js"></script>
+   <!-- js for date range -->
+   <!-- <script src="../assets/lib/date-rangepicker/js/plugins.bundle.js"></script>
+   <script src="../assets/lib/date-rangepicker/js/scripts.bundle.js"></script> -->
+
+  <script src="../assets/js/layout.js"></script>
+</body>
+
+</html>

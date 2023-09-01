@@ -1,0 +1,932 @@
+@font-face {
+  font-family: "Public Sans";
+  src: url("../../fonts/Public-Sans/PublicSans-ExtraLightItalic.eot");
+  src: url("../../fonts/Public-Sans/PublicSans-ExtraLightItalic.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/Public-Sans/PublicSans-ExtraLightItalic.woff2") format("woff2"),
+    url("../../fonts/Public-Sans/PublicSans-ExtraLightItalic.woff") format("woff"),
+    url("../../fonts/Public-Sans/PublicSans-ExtraLightItalic.ttf") format("truetype"),
+    url("../../fonts/Public-Sans/PublicSans-ExtraLightItalic.svg#PublicSans-ExtraLightItalic") format("svg");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("../../fonts/Public-Sans/PublicSans-Medium.eot");
+  src: url("../../fonts/Public-Sans/PublicSans-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/Public-Sans/PublicSans-Medium.woff2") format("woff2"),
+    url("../../fonts/Public-Sans/PublicSans-Medium.woff") format("woff"),
+    url("../../fonts/Public-Sans/PublicSans-Medium.ttf") format("truetype"),
+    url("../../fonts/Public-Sans/PublicSans-Medium.svg#PublicSans-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("../../fonts/Public-Sans/PublicSans-SemiBold.eot");
+  src: url("../../fonts/Public-Sans/PublicSans-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/Public-Sans/PublicSans-SemiBold.woff2") format("woff2"),
+    url("../../fonts/Public-Sans/PublicSans-SemiBold.woff") format("woff"),
+    url("../../fonts/Public-Sans/PublicSans-SemiBold.ttf") format("truetype"),
+    url("../../fonts/Public-Sans/PublicSans-SemiBold.svg#PublicSans-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("../../fonts/Public-Sans/PublicSans-ThinItalic.eot");
+  src: url("../../fonts/Public-Sans/PublicSans-ThinItalic.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/Public-Sans/PublicSans-ThinItalic.woff2") format("woff2"),
+    url("../../fonts/Public-Sans/PublicSans-ThinItalic.woff") format("woff"),
+    url("../../fonts/Public-Sans/PublicSans-ThinItalic.ttf") format("truetype"),
+    url("../../fonts/Public-Sans/PublicSans-ThinItalic.svg#PublicSans-ThinItalic") format("svg");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("../../fonts/Public-Sans/PublicSans-MediumItalic.eot");
+  src: url("../../fonts/Public-Sans/PublicSans-MediumItalic.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/Public-Sans/PublicSans-MediumItalic.woff2") format("woff2"),
+    url("../../fonts/Public-Sans/PublicSans-MediumItalic.woff") format("woff"),
+    url("../../fonts/Public-Sans/PublicSans-MediumItalic.ttf") format("truetype"),
+    url("../../fonts/Public-Sans/PublicSans-MediumItalic.svg#PublicSans-MediumItalic") format("svg");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("../../fonts/Public-Sans/PublicSans-BlackItalic.eot");
+  src: url("../../fonts/Public-Sans/PublicSans-BlackItalic.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/Public-Sans/PublicSans-BlackItalic.woff2") format("woff2"),
+    url("../../fonts/Public-Sans/PublicSans-BlackItalic.woff") format("woff"),
+    url("../../fonts/Public-Sans/PublicSans-BlackItalic.ttf") format("truetype"),
+    url("../../fonts/Public-Sans/PublicSans-BlackItalic.svg#PublicSans-BlackItalic") format("svg");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("../../fonts/Public-Sans/PublicSans-Light.eot");
+  src: url("../../fonts/Public-Sans/PublicSans-Light.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/Public-Sans/PublicSans-Light.woff2") format("woff2"),
+    url("../../fonts/Public-Sans/PublicSans-Light.woff") format("woff"),
+    url("../../fonts/Public-Sans/PublicSans-Light.ttf") format("truetype"),
+    url("../../fonts/Public-Sans/PublicSans-Light.svg#PublicSans-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("../../fonts/Public-Sans/PublicSans-Bold.eot");
+  src: url("../../fonts/Public-Sans/PublicSans-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/Public-Sans/PublicSans-Bold.woff2") format("woff2"),
+    url("../../fonts/Public-Sans/PublicSans-Bold.woff") format("woff"),
+    url("../../fonts/Public-Sans/PublicSans-Bold.ttf") format("truetype"),
+    url("../../fonts/Public-Sans/PublicSans-Bold.svg#PublicSans-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("../../fonts/Public-Sans/PublicSans-Black.eot");
+  src: url("../../fonts/Public-Sans/PublicSans-Black.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/Public-Sans/PublicSans-Black.woff2") format("woff2"),
+    url("../../fonts/Public-Sans/PublicSans-Black.woff") format("woff"),
+    url("../../fonts/Public-Sans/PublicSans-Black.ttf") format("truetype"),
+    url("../../fonts/Public-Sans/PublicSans-Black.svg#PublicSans-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("../../fonts/Public-Sans/PublicSans-Thin.eot");
+  src: url("../../fonts/Public-Sans/PublicSans-Thin.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/Public-Sans/PublicSans-Thin.woff2") format("woff2"),
+    url("../../fonts/Public-Sans/PublicSans-Thin.woff") format("woff"),
+    url("../../fonts/Public-Sans/PublicSans-Thin.ttf") format("truetype"),
+    url("../../fonts/Public-Sans/PublicSans-Thin.svg#PublicSans-Thin") format("svg");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("../../fonts/Public-Sans/PublicSans-SemiBoldItalic.eot");
+  src: url("../../fonts/Public-Sans/PublicSans-SemiBoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/Public-Sans/PublicSans-SemiBoldItalic.woff2") format("woff2"),
+    url("../../fonts/Public-Sans/PublicSans-SemiBoldItalic.woff") format("woff"),
+    url("../../fonts/Public-Sans/PublicSans-SemiBoldItalic.ttf") format("truetype"),
+    url("../../fonts/Public-Sans/PublicSans-SemiBoldItalic.svg#PublicSans-SemiBoldItalic") format("svg");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("../../fonts/Public-Sans/PublicSans-BoldItalic.eot");
+  src: url("../../fonts/Public-Sans/PublicSans-BoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/Public-Sans/PublicSans-BoldItalic.woff2") format("woff2"),
+    url("../../fonts/Public-Sans/PublicSans-BoldItalic.woff") format("woff"),
+    url("../../fonts/Public-Sans/PublicSans-BoldItalic.ttf") format("truetype"),
+    url("../../fonts/Public-Sans/PublicSans-BoldItalic.svg#PublicSans-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("../../fonts/Public-Sans/PublicSans-Regular.eot");
+  src: url("../../fonts/Public-Sans/PublicSans-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/Public-Sans/PublicSans-Regular.woff2") format("woff2"),
+    url("../../fonts/Public-Sans/PublicSans-Regular.woff") format("woff"),
+    url("../../fonts/Public-Sans/PublicSans-Regular.ttf") format("truetype"),
+    url("../../fonts/Public-Sans/PublicSans-Regular.svg#PublicSans-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("../../fonts/Public-Sans/PublicSans-LightItalic.eot");
+  src: url("../../fonts/Public-Sans/PublicSans-LightItalic.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/Public-Sans/PublicSans-LightItalic.woff2") format("woff2"),
+    url("../../fonts/Public-Sans/PublicSans-LightItalic.woff") format("woff"),
+    url("../../fonts/Public-Sans/PublicSans-LightItalic.ttf") format("truetype"),
+    url("../../fonts/Public-Sans/PublicSans-LightItalic.svg#PublicSans-LightItalic") format("svg");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("../../fonts/Public-Sans/PublicSans-Italic.eot");
+  src: url("../../fonts/Public-Sans/PublicSans-Italic.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/Public-Sans/PublicSans-Italic.woff2") format("woff2"),
+    url("../../fonts/Public-Sans/PublicSans-Italic.woff") format("woff"),
+    url("../../fonts/Public-Sans/PublicSans-Italic.ttf") format("truetype"),
+    url("../../fonts/Public-Sans/PublicSans-Italic.svg#PublicSans-Italic") format("svg");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("../../fonts/Public-Sans/PublicSans-ExtraBoldItalic.eot");
+  src: url("../../fonts/Public-Sans/PublicSans-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/Public-Sans/PublicSans-ExtraBoldItalic.woff2") format("woff2"),
+    url("../../fonts/Public-Sans/PublicSans-ExtraBoldItalic.woff") format("woff"),
+    url("../../fonts/Public-Sans/PublicSans-ExtraBoldItalic.ttf") format("truetype"),
+    url("../../fonts/Public-Sans/PublicSans-ExtraBoldItalic.svg#PublicSans-ExtraBoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("../../fonts/Public-Sans/PublicSans-ExtraBold.eot");
+  src: url("../../fonts/Public-Sans/PublicSans-ExtraBold.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/Public-Sans/PublicSans-ExtraBold.woff2") format("woff2"),
+    url("../../fonts/Public-Sans/PublicSans-ExtraBold.woff") format("woff"),
+    url("../../fonts/Public-Sans/PublicSans-ExtraBold.ttf") format("truetype"),
+    url("../../fonts/Public-Sans/PublicSans-ExtraBold.svg#PublicSans-ExtraBold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("../../fonts/Public-Sans/PublicSans-ExtraLight.eot");
+  src: url("../../fonts/Public-Sans/PublicSans-ExtraLight.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/Public-Sans/PublicSans-ExtraLight.woff2") format("woff2"),
+    url("../../fonts/Public-Sans/PublicSans-ExtraLight.woff") format("woff"),
+    url("../../fonts/Public-Sans/PublicSans-ExtraLight.ttf") format("truetype"),
+    url("../../fonts/Public-Sans/PublicSans-ExtraLight.svg#PublicSans-ExtraLight") format("svg");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 16px;
+  line-height: 25px;
+  color: $text-color;
+  font-weight: $fw-400;
+  font-family: "Public Sans";
+  position: relative;
+}
+
+.btn {
+  padding: 9px 16px;
+  border-radius: 5px;
+  font-size: 15px;
+  line-height: 18px;
+  border: none;
+
+  &.btn-sm {
+    padding: 3px 7px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  &.btn-primary {
+    background-color: $blue;
+    color: $white;
+
+    &:hover {
+      background-color: lighten($blue , 5%);
+    }
+
+    &.active {
+      background-color: lighten($blue , 5%);
+    }
+  }
+
+  &.btn-warning {
+    background-color: lighten($orange , 5%);
+    color: $white;
+
+    &:hover {
+      background-color: $orange;
+      color: $white;
+    }
+
+    &.active {
+      background-color: $orange;
+      color: $white;
+    }
+  }
+
+  &.btn-outline-primary {
+    color: $blue;
+    border: 1px solid $blue;
+
+    &:hover {
+      background-color: $blue;
+      color: $white;
+    }
+
+    &.active {
+      background-color: $blue;
+      color: $white;
+    }
+  }
+
+  &.btn-outline-white {
+    color: $white;
+    border: 1px solid $white;
+
+    &:hover {
+      background-color: $white;
+      color: $blue;
+    }
+
+    &.active {
+      background-color: $blue;
+      color: $white;
+    }
+  }
+
+  &.btn-black {
+    background-color: $black;
+    color: $white;
+
+    &:hover {
+      background-color: lighten($black , 20%);
+      color: $white;
+    }
+
+    &.active {
+      background-color: lighten($black , 20%);
+      color: $white;
+    }
+  }
+}
+
+h1,
+.h1 {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+h2,
+.h2 {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+h3,
+.h3 {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.container-fluid {
+  padding: 0 30px;
+}
+
+ul {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $blue;
+
+  &:hover {
+    color: darken($color: $blue , $amount: 5%);
+  }
+}
+
+.card {
+  border: none;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 7px 15px rgba(11, 50, 67, 0.1);
+  border: 1px solid $border-color;
+
+  .card-header {
+    border-bottom: 1px solid $border-color;
+    padding: 12px 12px;
+    background-color: $light-blue;
+  }
+
+  .card-body {
+    padding: 20px;
+  }
+
+  &.bg-gray {
+    background-color: $light-gray;
+  }
+
+  &.bg-blue-light {
+    background-color: lighten($blue , 33%);
+  }
+
+  &.bg-green {
+    background-color: $green;
+  }
+}
+
+input {
+  &:focus {
+    outline: none;
+  }
+}
+
+.label,
+label {
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: $text-color;
+  display: inline-block;
+  margin-bottom: 8px;
+  color: $blue;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  background-color: $white;
+  border: 1px solid $border-color;
+  font-size: 15px;
+  line-height: 18px;
+  padding: 8px 14px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-weight: $fw-300;
+
+  &:focus {
+    background-color: $white;
+    box-shadow: none;
+  }
+
+  &::-webkit-input-placeholder {
+    /* Edge */
+    color: $gray-dd;
+  }
+
+  &:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $gray-dd;
+  }
+
+  &::placeholder {
+    color: $gray-dd;
+  }
+}
+
+.custom-select {
+  position: relative;
+
+  select {
+    padding: 8px 30px 8px 15px;
+  }
+
+  i {
+    position: absolute;
+    top: 14px;
+    right: 12px;
+    font-weight: $fw-600;
+    font-size: 12px;
+    pointer-events: none;
+  }
+}
+
+.custom-radio {
+  display: flex;
+  min-height: 21px;
+  align-items: center;
+
+  .form-check-input {
+    width: 18px;
+    min-width: 18px;
+    height: 18px;
+    border-color: $border-color;
+    cursor: pointer;
+    margin-right: 8px;
+    margin-top: 0px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    &:checked {
+      background-color: $white;
+      box-shadow: none;
+      background-image: url(../../images/circle-black.svg);
+    }
+  }
+
+  input[type=checkbox] {
+    border-radius: 50%;
+  }
+
+  label {
+    font-size: 13px;
+    line-height: 21px;
+  }
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  .form-check-input {
+    width: 24px;
+    height: 24px;
+    border-color: $border-color;
+    cursor: pointer;
+    margin-right: 8px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 4px;
+    margin-top: 0;
+
+    &:checked {
+      background-color: $blue;
+      box-shadow: none;
+      background-image: url(../../images/icon/check-white.svg);
+      background-size: 18px;
+    }
+  }
+
+  label {
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+
+.row-y {
+  align-items: center;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 20px;
+  background-clip: content-box;
+}
+.mainmenu-list{
+  &::-webkit-scrollbar{
+    width:0;
+  }
+}
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $white;
+  border: 1px solid $light-gray;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background-color: $text-light;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
+.table {
+  border-collapse: separate;
+  border-spacing: 0;
+
+  th,
+  td {
+    padding: 6px 10px;
+    border: solid 1px $border-color;
+    border-style: solid;
+    vertical-align: middle;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  th {
+    padding: 8px 10px;
+  }
+
+  thead {
+    tr {
+      th {
+        color: $text-color;
+        font-weight: $fw-500;
+        background-color: $text-color;
+        color: $white;
+        border-bottom: none;
+        border-right: none;
+        text-transform: uppercase;
+
+        &:last-child {
+          border-right: 1px solid $border-color;
+        }
+      }
+
+      &:first-child {
+        th {
+          border-top: 1px solid $border-color;
+
+          &:first-child {
+            border-radius: 5px 0 0 0;
+          }
+
+          &:last-child {
+            border-radius: 0 5px 0 0;
+          }
+        }
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      &:hover {
+        background-color: $light-blue;
+      }
+
+      td {
+        color: $text-light;
+        font-weight: $fw-400;
+        border-bottom: none;
+        border-right: none;
+
+        &:last-child {
+          border-right: 1px solid $border-color;
+        }
+      }
+
+      &:last-child {
+        td {
+          border-bottom: 1px solid $border-color;
+
+          &:first-child {
+            border-radius: 0 0 0 5px;
+          }
+
+          &:last-child {
+            border-radius: 0 0 5px 0;
+          }
+        }
+      }
+
+      &:nth-child(even) {
+        td {
+          background-color: $light-blue;
+        }
+      }
+    }
+  }
+}
+
+.text-green {
+  color: $green;
+}
+
+.text-red {
+  color: $red;
+}
+
+.pay-modal {
+  .modal-dialog {
+    .modal-content {
+      .modal-header {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+
+.form-switch {
+  &.isActive-tglbtn {
+    .form-check-input {
+      width: 48px;
+      height: 24px;
+      background-color: $red;
+      border-color: $red;
+      background-image: url(../../images/icon/white-dote.svg);
+
+      &:checked {
+        background-color: $green;
+        border-color: $green;
+      }
+    }
+  }
+}
+
+.badge {
+  font-weight: $fw-500;
+}
+
+.input-btnGroup {
+  .input-group-append {
+    .input-group-text {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+}
+
+.py-accordion {
+  .accordion-item {
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 0 6px 12px rgba(11, 50, 67, 0.2);
+
+    .accordion-header {
+      .accordion-button {
+        &.collapsed {
+          &::after {
+            background-image: url(../../images/icon/add.svg);
+          }
+        }
+
+        &:not(collapsed) {
+          box-shadow: none;
+
+          &::after {
+            background-image: url(../../images/icon/subtract.svg);
+            transform: rotate(0deg);
+          }
+        }
+      }
+    }
+  }
+}
+
+.row-y {
+  align-items: center;
+}
+
+.noRecord-bar {
+  background-color: #ef5a68;
+  color: $white;
+  padding: 7px 15px;
+  border-radius: 10px;
+  text-align: center;
+
+  p {
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.py-multiSelect {
+  .select2 {
+    width: 100% !important;
+
+    .select2-selection--multiple {
+      border-color: $border-color !important;
+
+      // height: 36px;
+      .select2-selection__rendered {
+        min-height: 34px;
+        display: inherit;
+
+        .select2-selection__choice {
+          font-size: 14px;
+          line-height: 20px;
+          background-color: $light-blue;
+          color: $blue;
+          border-color: $blue;
+        }
+      }
+    }
+  }
+
+  .multiselect-native-select {
+    .btn-group {
+      width: 100%;
+
+      .multiselect {
+        width: 100%;
+        border: 1px solid $border-color;
+        border-radius: 6px;
+        background-color: $white;
+        padding: 8px 30px 8px 15px;
+        text-align: left;
+        font-size: 15px;
+        line-height: 18px;
+      }
+
+      .multiselect-container {
+        margin: 46px 0 0;
+        width: 100%;
+        max-height: 200px;
+        overflow-y: auto;
+      }
+    }
+  }
+}
+
+.select2-container--default .select2-results__option[aria-selected=true] {
+  background-color: $light-gray !important;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: $blue !important;
+}
+
+.min-hgAuto {
+  min-height: auto !important;
+}
+
+.minWidth {
+  min-width: auto !important;
+}
+
+.py-paginate {
+  .pagination {
+    justify-content: center;
+
+    .page-item {
+      &.active {
+        .page-link {
+          background-color: $blue;
+          border-color: $blue;
+          color: $white;
+        }
+      }
+
+      .page-link {
+        color: $blue;
+      }
+    }
+  }
+}
+
+.slctAND-or {
+  position: absolute;
+  left: -140px;
+  max-width: 110px;
+}
+
+.mdHedg-txt{
+  position: relative;
+  
+  h1{
+    z-index: 2;
+    background-color:$white;
+    // position: relative;
+    display: inline-block;
+    margin-bottom:0;
+    span{
+      display:inline-block;
+      position: relative;
+      z-index:2;
+      background-color:$white;
+      padding:0 10px;
+    }
+    &::before{
+      content:"";
+      width:100%;
+      height:1px;
+      background-color:$black;
+      position:absolute;
+      left:0;
+      top:50%;
+      z-index:1;
+    }
+    // &::after{
+    //   content:"";
+    //   width:40%;
+    //   height:1px;
+    //   background-color:$black;
+    //   position:absolute;
+    //   right:0;
+    //   top:50%;
+    //   z-index:1;
+    // }
+  }
+}
+
+
+// ====================== Three dots jumpping animation css start  ========================== //
+
+.jumping-dots-loader {
+  position: relative;
+  margin: 0 auto;
+  display:inline-block;
+  span {
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      border-radius: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      margin: 5px 1px;
+      &:nth-child(1) {
+          animation: bounce 1s ease-in-out infinite;
+      }
+      &:nth-child(2) {
+          animation: bounce 1s ease-in-out 0.33s infinite;
+      }
+      &:nth-child(3) {
+          animation: bounce 1s ease-in-out 0.66s infinite;
+      }
+  }
+}
+
+@keyframes bounce {
+  0%,
+  75%,
+  100% {
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
+      transform: translateY(0)
+  }
+
+  25% {
+      -webkit-transform: translateY(-12px);
+      -ms-transform: translateY(-12px);
+      -o-transform: translateY(-12px);
+      transform: translateY(-12px)
+  }
+}
+
+// ====================== Three dots jumpping animation css end  ========================== //

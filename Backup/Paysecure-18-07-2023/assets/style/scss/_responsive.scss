@@ -1,0 +1,205 @@
+@media only screen and (max-width:1200px){
+    .login-page{
+        .right-formsec{
+            .form-cardbox{
+                max-width:70%;
+            }
+        } 
+    } 
+    .slctAND-or {
+        left: -110px;
+        max-width: 100px;
+    }
+    .mainCondit-row{
+        .candit-clm{
+            &::before{
+                left:-180px;
+            }
+            .canditInner-row{
+                &::before{
+                    max-width:230px;
+                    left:-180px;
+                }
+            }
+        } 
+    } 
+}
+
+@media only screen and (max-width:1024px){
+    .summery-listdata{
+        &.merchantsList-data{
+            &.data-25{
+                li{
+                 width:calc(50% - 15px);
+                }
+             } 
+            li{
+                width:calc(50% - 15px);
+                margin:0 15px 15px 0;
+                // &:nth-child(2n+2){
+                //     margin-right:0;
+                // }
+            }
+        } 
+    }
+}
+
+@media only screen and (max-width:991px){
+    .top-header{
+        .right-profile{
+            .user-profile{
+                // .profile-name{
+                //     display:none;
+                // }
+                // .profile-fullname{
+                //     p{
+                //         display:none;
+                //     }
+                // } 
+            } 
+        } 
+    } 
+    .pay-mainarea{
+        .left-menubar{
+            transform:translateX(-20px);
+            opacity:0;
+            visibility:hidden;
+            margin-left:-230px; 
+            .sidemenu-close{
+                display:none;
+            }
+        }
+        .right-sidedata{
+            width:100%;
+            margin-left:0;
+        }
+    } 
+    .login-page{
+        .left-imagesec{
+            display:none;
+        }
+        .right-formsec{
+            width:100%;
+            .form-cardbox{
+                max-width:55%;
+            }
+        }
+    } 
+    .summery-listdata{
+        li{
+            width:100%;
+            margin:0 0 15px 0;
+        }
+    } 
+    .com-settledata{
+        .settledata-list{
+            flex-wrap:wrap;
+            li{
+                width:50%;
+                min-width: 50%;
+                border-right:1px solid $black;
+                border-bottom:none;
+                word-break: break-word;
+                &:nth-child(1) , &:nth-child(2){
+                    border-bottom:none;
+                }
+                &:nth-child(even){
+                    border-left:none;
+                }
+                &:last-child , &:nth-last-child(2){
+                    border-bottom:1px solid $black;
+                }
+            }
+        } 
+    } 
+    .ruleSet-boxRow{
+        .leftTab-box{
+            margin-bottom:20px;
+            .nav{
+                flex-direction:row !important;
+            }
+        }
+        .rightData-box{
+            width:100%;
+        }
+    } 
+}
+@media only screen and (max-width:767px){
+    .top-header{
+        .left-logo{
+            a{
+                img{
+                    width:150px;
+                }
+            } 
+        } 
+    } 
+    .slot-box{
+        margin-bottom:20px;
+    }
+}
+@media only screen and (max-width:575px){
+    .top-header{
+        .left-logo{
+            a{
+                img{
+                    width:120px;
+                    display:none;
+                }
+            } 
+        } 
+    } 
+    .login-page{
+        .right-formsec{
+            .form-cardbox{
+                max-width:100%;
+            }
+        }
+    } 
+    .mapAdd-btn{
+        .addMore-btn{
+            position:initial;
+            margin-right:10px;
+        }
+    } 
+    .summery-listdata{
+        &.merchantsList-data{
+            li{
+                width:100%;
+                margin:0 0 15px 0;
+            }
+            &.data-25{
+               li{
+                width:100%;
+               }
+            } 
+        } 
+    }
+}
+
+@media only screen and (max-width:425px){
+    .centerAlert-box{
+        .alertCard{
+            .card-body{
+                padding:30px 15px;
+                .topImg{
+                     width:90px;
+                     height:90px;
+                     border-width:5px;
+                     img{
+                        width:45px;
+                     }
+                }
+                h1{
+                    font-size:20px;
+                    line-height:24px;
+                    margin-bottom:20px;
+                }
+                h2{
+                    font-size:18px;
+                    line-height:22px;
+                }
+            } 
+        } 
+    } 
+}

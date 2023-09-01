@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pay-secure</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/icon/favicon.ico">
+    <link rel="stylesheet" href="../assets/style/css/frontpage.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body class="">
+    <header class="top-header">
+        <div class="leftmob-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="left-logo">
+            <a href="../Dashboard/Dashboard-page.html">
+                <img src="../assets/images/icon/PaySecure-logo01.png" alt="" />
+            </a>
+        </div>
+        <div class="right-profile">
+            <div class="user-profile">
+                <div class="profile-name">DB</div>
+                <div class="profile-fullname">
+                    <p>dbadmin1</p>
+                    <div class="dropdown admin-box">
+                        <a href="javascript:void(0)" class="superadmin-dropdown" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Super Admin <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu admin-list" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-regular fa-user"></i>
+                                    <span>Profile</span></a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-regular fa-envelope"></i>
+                                    <span>My Messages</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-solid fa-lock"></i>
+                                    <span>Lock Screen</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../Change-password/Change-password.html">
+                                    <i class="fa-solid fa-key"></i>
+                                    <span>Change Password</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+    <section class="pay-mainarea">
+        <div class="left-menubar">
+            <div class="sidemenu-close">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+            <ul class="mainmenu-list">
+                <li class="">
+                    <a href="../Dashboard/Dashboard-page.html">
+                        <i class="fa-solid fa-table-cells-large"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../Manage-roles/Manage-Roles.html">
+                        <i class="fa-regular fa-user"></i>
+                        <span>Manage Roles</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../Global-setting/Global-setting.html">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Global Setting</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../Merchant-limits/Merchant-Limits.html">
+                        <i class="fa-solid fa-suitcase"></i>
+                        <span>Merchant limits</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="../Banks/Bank-page.html">
+                        <i class="fa-solid fa-building-columns"></i>
+                        <span>Banks</span>
+                    </a>
+                </li>
+                <li class="inr-list">
+                    <a href="javascript:void(0)" class="inr-link">
+                        <i class="fa-solid fa-box"></i>
+                        <span>Charges</span>
+                        <i class="fa-solid fa-angle-down dwn-arr"></i>
+                    </a>
+                    <ul class="innerMenu-list">
+                        <li>
+                            <a href="../Charges/Bank-charges.html">
+                                <span>Bank</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Charges/Merchants-charges.html">
+                                <span>Merchant</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../Transactions/Transactions.html">
+                        <i class="fa-regular fa-credit-card"></i>
+                        <span>Transactions</span>
+                    </a>
+                </li>
+                <li class="inr-list">
+                    <a href="javascript:void(0)" class="inr-link">
+                        <i class="fa-regular fa-user"></i>
+                        <span>Profile Intelligence</span>
+                        <i class="fa-solid fa-angle-down dwn-arr"></i>
+                    </a>
+                    <ul class="innerMenu-list">
+                        <li>
+                            <a href="../Profile-intelligence/Strategies.html">
+                                <span>Strategies</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Profile-intelligence/Rule-Sets.html">
+                                <span>RuleSets</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Profile-intelligence/Decision-Matrix.html">
+                                <span>Decision Matrix</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../Analytic-report/Analytic-report.html">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <span>Analytic Report</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="../Merchants/Merchants.html">
+                        <i class="fa-regular fa-clipboard"></i>
+                        <span>Merchants</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../MID-Limits/MID-Limits.html">
+                        <i class="fa-brands fa-codepen"></i>
+                        <span>MID Limits</span>
+                    </a>
+                </li>
+                <li class="inr-list">
+                    <a href="javascript:void(0)" class="inr-link">
+                        <i class="fa-solid fa-box"></i>
+                        <span>Blockings</span>
+                        <i class="fa-solid fa-angle-down dwn-arr"></i>
+                    </a>
+                    <ul class="innerMenu-list">
+                        <li>
+                            <a href="../Blockings/MID.html">
+                                <span>MID</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Blockings/BIN.html">
+                                <span>BIN</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Blockings/CARD.html">
+                                <span>Card</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Blockings/Customer-profile.html">
+                                <span>Customer Profile</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Blockings/Country.html">
+                                <span>Country</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../Settlements/Settlements.html">
+                        <i class="fa-regular fa-square-check"></i>
+                        <span>Settlements</span>
+                    </a>
+                </li>
+                <li class="inr-list">
+                    <a href="javascript:void(0)" class="inr-link">
+                        <i class="fa-solid fa-box"></i>
+                        <span>Utility</span>
+                        <i class="fa-solid fa-angle-down dwn-arr"></i>
+                    </a>
+                    <ul class="innerMenu-list pdlfm">
+                        <li>
+                            <a href="#">
+                                <span>Email Risk Analysis</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Manual-refunds/Manual-refunds.html">
+                                <span>Manual Refund</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Process Settlement / Chargeback</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Utility/Profile-scoring.html">
+                                <span>Profile Scoring</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="inr-list">
+                    <a href="javascript:void(0)" class="inr-link">
+                        <i class="fa-solid fa-yin-yang"></i>
+                        <span>P2p</span>
+                        <i class="fa-solid fa-angle-down dwn-arr"></i>
+                    </a>
+                    <ul class="innerMenu-list pdlfm">
+                        <li>
+                            <a href="../p2p/p2p-Dashboard.html">
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../p2p/Top-deposite.html">
+                                <span>Top Deposite</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../p2p/Top-withdrawal.html">
+                                <span>Top Withdrawal</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../p2p/settlements.html">
+                                <span>Settlements</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../p2p/Transections.html">
+                                <span>Transactions</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <span>Alert Config</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- left side menu end  -->
+        <div class="right-sidedata">
+            <div class="heading-bartitle">
+                <div class="left-bar">
+                    <h1>Merchant Info</h1>
+                    <a href="#"><i class="fa-solid fa-table-cells-large"></i>
+                        <span>Dashboard</span></a>
+                </div>
+                <div class="right-bar">
+
+                </div>
+            </div>
+            <!-- heading bar end -->
+            <div class="py-main-contain">
+                <div class="row pagetitle-row">
+                    <div class="col">
+                        <div class="titleHead-colm">
+                            <i class="fa-regular fa-clipboard"></i>
+                            <h2>Merchant Details</h2>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- row end -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card dash-cardbox h-auto">
+                            <div class="card-body">
+                                <form action="">
+                                    <div class="row">
+                                        <div class="form-group col-md-5 mx-auto">
+                                            <label>Merchant</label>
+                                            <div class="custom-select">
+                                                <select class="form-control">
+                                                    <option label="Select Merchant" value="0" selected="selected">Select
+                                                        Merchant</option>
+                                                    <option label="aaaaaaaaaaaaaaaa" value="5">aaaaaaaaaaaaaaaa</option>
+                                                    <option label="abccd" value="4">abccd</option>
+                                                    <option label="Clothing" value="6">Clothing</option>
+                                                    <option label="test" value="1">test</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-down"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- row end -->
+                                </form>
+
+                            </div>
+                        </div>
+                        <!-- card end -->
+                        
+                        <div class="accordion py-accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        Merchant Details
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div class="form-group col-md-3">
+                                                <label>Live Transaction Allowed</label>
+                                                <div class="form-check form-switch isActive-tglbtn">
+                                                    <input class="form-check-input" type="checkbox" checked="" id="flexSwitchCheckDefault">
+                                                  </div>
+                                            </div>
+                                        </div>
+                                        <ul class="summery-listdata merchantsList-data">
+                                            <li>
+                                              <p>Title : Mr.</p>
+                                            </li>
+                                            <li>
+                                              <p>Contact Name : dfhk</p>
+                                            </li>
+                                            <li>
+                                              <p>Trading Business Name : test</p>
+                                            </li>
+                                            <li>
+                                              <p>Legal Name : test</p>
+                                            </li>
+                                            <li>
+                                              <p>Trading Address : test</p>
+                                            </li>
+                                            <li>
+                                              <p>Corporate Address : test</p>
+                                            </li>
+                                            <li>
+                                              <p>Trading Country : AX</p>
+                                            </li>
+                                            <li>
+                                              <p>Corporate Country : AL</p>
+                                            </li>
+                                            <li>
+                                              <p>Trading State : state1</p>
+                                            </li>
+                                            <li>
+                                              <p>Trading Postal Code : fgh</p>
+                                            </li>
+                                            <li>
+                                              <p>Corporate State : state2</p>
+                                            </li>
+                                            <li>
+                                              <p>Corporate Postal Code : fdgh</p>
+                                            </li>
+                                            <li>
+                                              <p>Business Phone : gh</p>
+                                            </li>
+                                            <li>
+                                              <p>Contact Phone : fdh</p>
+                                            </li>
+                                            <li>
+                                              <p>Contact Name : dfh</p>
+                                            </li>
+                                            <li>
+                                              <p>Registration# : dfh</p>
+                                            </li>
+                                            <li>
+                                              <p>Email Address : dfh</p>
+                                            </li>
+                                            <li>
+                                              <p>Website Address : fdh1</p>
+                                            </li>
+                                            <li>
+                                              <p>Trading commencment date : 2022-11-25</p>
+                                            </li>
+                                            <li>
+                                              <p>Date of incorporation : 2022-11-25</p>
+                                            </li>
+                                            <li>
+                                              <p>Default Time Zone : MIT</p>
+                                            </li>
+                                            <li>
+                                              <p>Default Currency : </p>
+                                            </li>
+                                          </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseTwo">
+                                        Account Detail
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul class="summery-listdata merchantsList-data">
+                                            <li>
+                                              <p>Account Name : aaa</p>
+                                            </li>
+                                            <li>
+                                              <p>Bank Routing & Identification No : bbb</p>
+                                            </li>
+                                            <li>
+                                              <p>Account # : 111</p>
+                                            </li>
+                                            <li>
+                                              <p>Bank Name : cccdd</p>
+                                            </li>
+                                            <li>
+                                              <p>Bank Address : ddd</p>
+                                            </li>
+                                            <li>
+                                              <p>Country : GU</p>
+                                            </li>
+                                            <li>
+                                              <p>State : fff</p>
+                                            </li>
+                                            <li>
+                                              <p>Postal Code : 222</p>
+                                            </li>
+                                            <li>
+                                              <p>Payment Advice : N/A</p>
+                                            </li>
+                                            <li>
+                                              <p>Payment Advice Remittance : Trading Address</p>
+                                            </li>
+                                          </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                        aria-expanded="false" aria-controls="collapseThree">
+                                        Services
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul class="summery-listdata merchantsList-data">
+                                            <li>
+                                              <p>Type of Cards : Credit Card, Visa, Master</p>
+                                            </li>
+                                          </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                        aria-expanded="false" aria-controls="collapseFour">
+                                        Profile Estimation Data
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul class="summery-listdata merchantsList-data">
+                                            <li>
+                                              <p>Automatic renewals or recurring transactions  : Yes</p>
+                                            </li>
+                                            <li>
+                                                <p>Refund policy : Full refund</p>
+                                              </li>
+                                              <li>
+                                                <p>Days to submit refunds : 0 - 3 days</p>
+                                              </li>
+                                          </ul>
+                                          <hr>
+                                          <h3>No. of transactions limit for customers</h3>
+                                          <ul class="summery-listdata merchantsList-data data-25">
+                                            <li>
+                                              <p>Hourly  : 21</p>
+                                            </li>
+                                            <li>
+                                                <p>Daily : 131</p>
+                                              </li>
+                                              <li>
+                                                <p>Weekly : 341</p>
+                                              </li>
+                                              <li>
+                                                <p>Monthly : 1001</p>
+                                              </li>
+                                              <li>
+                                                <p>Total transaction amount : 12341</p>
+                                              </li>
+                                              <li>
+                                                <p>Per transaction amount : 1231</p>
+                                              </li>
+                                              <li>
+                                                <p>Max Attempts : 1002</p>
+                                              </li>
+                                          </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                        aria-expanded="false" aria-controls="collapseFive">
+                                        Documents
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse"
+                                    aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <h1>DOWNLOAD DOCUMENTS</h1>
+                                        <h3 class="mb-3">Bank Documents</h3>
+                                        <div class="row row-y">
+                                            <div class="col">
+                                                <p class="mb-0"><i class="fa-regular fa-file-lines"></i> kk4.csv</p>
+                                            </div>
+                                            <div class="col">
+                                                <a href="#" class="btn btn-primary"><i class="fa-solid fa-download"></i> Download</a>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <h3 class="mb-3">Officer Documents</h3>
+                                        <div class="row row-y">
+                                            <div class="col">
+                                                <p class="mb-0 text-red">No documents uploaded</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <h3 class="mb-3">Officer Documents</h3>
+                                        <div class="row row-y">
+                                            <div class="col">
+                                                <p class="mb-0 text-red">No documents uploaded</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- col end -->
+                </div>
+            </div>
+        </div>
+        <!-- right side data end -->
+    </section><!-- Button trigger modal -->
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../assets/lib/bs5/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- fontawesome js start -->
+    <script src="../assets/lib/fw/fontawesome.js"></script>
+
+    <script src="../assets/js/layout.js"></script>
+</body>
+
+</html>

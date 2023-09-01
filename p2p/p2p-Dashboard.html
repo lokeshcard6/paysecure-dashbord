@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pay-secure</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/icon/favicon.ico">
+    <link rel="stylesheet" href="../assets/style/css/frontpage.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body class="">
+    <header class="top-header">
+        <div class="leftmob-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="left-logo">
+            <a href="../Dashboard/Dashboard-page.html">
+                <img src="../assets/images/icon/PaySecure-logo01.png" alt="" />
+            </a>
+        </div>
+        <div class="right-profile">
+            <div class="user-profile">
+                <div class="profile-name">DB</div>
+                <div class="profile-fullname">
+                    <p>dbadmin1</p>
+                    <div class="dropdown admin-box">
+                        <a href="javascript:void(0)" class="superadmin-dropdown" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Super Admin <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu admin-list" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-regular fa-user"></i>
+                                    <span>Profile</span></a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">
+                                    <i class="fa-regular fa-envelope"></i>
+                                    <span>My Messages</span>
+                                </a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-solid fa-lock"></i>
+                                    <span>Lock Screen</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../Change-password/Change-password.html">
+                                    <i class="fa-solid fa-key"></i>
+                                    <span>Change Password</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+    <section class="pay-mainarea">
+        <div class="left-menubar">
+            <div class="sidemenu-close">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+            <ul class="mainmenu-list">
+                <li class="">
+                    <a href="../Dashboard/Dashboard-page.html">
+                        <i class="fa-solid fa-table-cells-large"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../Manage-roles/Manage-Roles.html">
+                        <i class="fa-regular fa-user"></i>
+                        <span>Manage Roles</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../Global-setting/Global-setting.html">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Global Setting</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="../Merchant-limits/Merchant-Limits.html">
+                        <i class="fa-solid fa-suitcase"></i>
+                        <span>Merchant limits</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="../Banks/Bank-page.html">
+                        <i class="fa-solid fa-building-columns"></i>
+                        <span>Banks</span>
+                    </a>
+                </li>
+                <li class="inr-list">
+                    <a href="javascript:void(0)" class="inr-link">
+                        <i class="fa-solid fa-box"></i>
+                        <span>Charges</span>
+                        <i class="fa-solid fa-angle-down dwn-arr"></i>
+                    </a>
+                    <ul class="innerMenu-list">
+                        <li>
+                            <a href="../Charges/Bank-charges.html">
+                                <span>Bank</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Charges/Merchants-charges.html">
+                                <span>Merchant</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../Transactions/Transactions.html">
+                        <i class="fa-regular fa-credit-card"></i>
+                        <span>Transactions</span>
+                    </a>
+                </li>
+                <li class="inr-list">
+                    <a href="javascript:void(0)" class="inr-link">
+                        <i class="fa-regular fa-user"></i>
+                        <span>Profile Intelligence</span>
+                        <i class="fa-solid fa-angle-down dwn-arr"></i>
+                    </a>
+                    <ul class="innerMenu-list">
+                        <li>
+                            <a href="../Profile-intelligence/Strategies.html">
+                                <span>Strategies</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Profile-intelligence/Rule-Sets.html">
+                                <span>RuleSets</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Profile-intelligence/Decision-Matrix.html">
+                                <span>Decision Matrix</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../Analytic-report/Analytic-report.html">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <span>Analytic Report</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../Merchants/Merchants.html">
+                        <i class="fa-regular fa-clipboard"></i>
+                        <span>Merchants</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../MID-Limits/MID-Limits.html">
+                        <i class="fa-brands fa-codepen"></i>
+                        <span>MID Limits</span>
+                    </a>
+                </li>
+                <li class="inr-list">
+                    <a href="javascript:void(0)" class="inr-link">
+                        <i class="fa-solid fa-box"></i>
+                        <span>Blockings</span>
+                        <i class="fa-solid fa-angle-down dwn-arr"></i>
+                    </a>
+                    <ul class="innerMenu-list">
+                        <li>
+                            <a href="../Blockings/MID.html">
+                                <span>MID</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Blockings/BIN.html">
+                                <span>BIN</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Blockings/CARD.html">
+                                <span>Card</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Blockings/Customer-profile.html">
+                                <span>Customer Profile</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Blockings/Country.html">
+                                <span>Country</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../Settlements/Settlements.html">
+                        <i class="fa-regular fa-square-check"></i>
+                        <span>Settlements</span>
+                    </a>
+                </li>
+                <li class="inr-list">
+                    <a href="javascript:void(0)" class="inr-link">
+                        <i class="fa-solid fa-box"></i>
+                        <span>Utility</span>
+                        <i class="fa-solid fa-angle-down dwn-arr"></i>
+                    </a>
+                    <ul class="innerMenu-list pdlfm">
+                        <li>
+                            <a href="#">
+                                <span>Email Risk Analysis</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Manual-refunds/Manual-refunds.html">
+                                <span>Manual Refund</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Process Settlement / Chargeback</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Utility/Profile-scoring.html">
+                                <span>Profile Scoring</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="inr-list">
+                    <a href="javascript:void(0)" class="inr-link">
+                        <i class="fa-solid fa-yin-yang"></i>
+                        <span>P2p</span>
+                        <i class="fa-solid fa-angle-down dwn-arr"></i>
+                    </a>
+                    <ul class="innerMenu-list pdlfm">
+                        <li>
+                            <a href="../p2p/p2p-Dashboard.html">
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../p2p/Top-deposite.html">
+                                <span>Top Deposite</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../p2p/Top-withdrawal.html">
+                                <span>Top Withdrawal</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../p2p/settlements.html">
+                                <span>Settlements</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../p2p/Transections.html">
+                                <span>Transactions</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <span>Alert Config</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- left side menu end  -->
+        <div class="right-sidedata">
+            <div class="heading-bartitle">
+                <div class="left-bar">
+                    <h1>P2P </h1>
+                    <a href="#"><i class="fa-solid fa-table-cells-large"></i>
+                        <span>Dashboard</span></a>
+                </div>
+                <div class="right-bar">
+
+                </div>
+            </div>
+            <!-- heading bar end -->
+            <div class="py-main-contain">
+                <div class="row">
+                    <div class="form-group col-lg-3 col-md-4 mx-auto">
+                        <div class="d-flex align-items-center">
+                            <label class="mb-0 w-auto overflow-visible me-2">Merchants</label>
+                            <div class="custom-select w-100">
+                                <select class="form-control">
+                                    <option label="All" value="">All</option>
+                                    <option label="Merchant1
+                                    " value="">Merchant1
+                                    </option>
+                                    <option label="Merchant2
+                                    " value="">Merchant2
+                                    </option>
+                                </select>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!-- row end -->
+                <div class="row pagetitle-row">
+                    <div class="col">
+                        <div class="titleHead-colm">
+                            <h2><span class="text-uppercase"> Running Balance :</span> <span class="">Rs
+                                    2,679,178</span></h2>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- row end -->
+               
+                <div class="row my-5">
+                    <div class="col-md-6">
+                        <div class="depositeChart-box"><canvas id="depositeChart"></canvas></div>
+                    </div>
+                    <!-- col end -->
+                    <div class="col-md-6">
+                        <div class="withdrawalChart-box"><canvas id="withdrawalChart"></canvas></div>
+                    </div>
+                    <!-- col end -->
+                </div>
+                <!-- row end -->
+                <h2 class="my-4">Filter</h2>
+
+                <div class="row">
+                    <div class="form-group col-lg col-md-4">
+                        <!-- <label>Date</label> -->
+                        <div class="custom-select">
+                            <select class="form-control">
+                                <option label="date" value="">date</option>
+                            </select>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+                    <!-- col end -->
+                    <div class="form-group col-lg col-md-4">
+                        <!-- <label>Date</label> -->
+                        <div class="custom-select">
+                            <select class="form-control">
+                                <option label="Player" value="">Player 1</option>
+                            </select>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+                    <!-- col end -->
+                    <div class="form-group col-lg col-md-4">
+                        <!-- <label>Date</label> -->
+                        <div class="custom-select">
+                            <select class="form-control">
+                                <option label="Type" value="">Type 1</option>
+                            </select>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+                    <!-- col end -->
+                    <div class="form-group col-lg col-md-4">
+                        <!-- <label>Date</label> -->
+                        <div class="custom-select">
+                            <select class="form-control">
+                                <option label="City" value="">City</option>
+                            </select>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+                    <!-- col end -->
+                    <div class="form-group col-lg col-md-4">
+                        <!-- <label>Date</label> -->
+                        <div class="custom-select">
+                            <select class="form-control">
+                                <option label="Status" value="">Status</option>
+                            </select>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+                    <!-- col end -->
+                    <div class="form-group col-lg col-md-4">
+                        <!-- <label>Date</label> -->
+                        <div class="custom-select">
+                            <select class="form-control">
+                                <option label="Amount" value="">Amount</option>
+                            </select>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+                    <!-- col end -->
+                </div>
+                <!-- row end -->
+                <div class="table-responsive p2pTransec-table mb-4">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="">Time & date</th>
+                                <th scope="col" class="">Player ID</th>
+                                <th scope="col" class="">Transections Type</th>
+                                <th scope="col" class="">City</th>
+                                <th scope="col" class="">Status</th>
+                                <th scope="col" class="">Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span>13-Jun-2023</span>
+                                    <span>09:23</span>
+                                </td>
+                                <td>
+                                    <span>897845563212</span>
+                                </td>
+                                <td class="">
+                                    <span>Deposite</span>
+                                </td>
+                                <td>
+                                    <span>New Delhi</span>
+                                </td>
+                                <td>
+                                    <span>Succesfully</span>
+                                </td>
+                                <td>
+                                    <span>Rs 12000</span>
+                                </td>
+                            </tr>
+                            <!-- row end -->
+                            <tr>
+                                <td>
+                                    <span>13-Jun-2023</span>
+                                    <span>09:23</span>
+                                </td>
+                                <td>
+                                    <span>897845563212</span>
+                                </td>
+                                <td class="">
+                                    <span>Deposite</span>
+                                </td>
+                                <td>
+                                    <span>New Delhi</span>
+                                </td>
+                                <td>
+                                    <span>Succesfully</span>
+                                </td>
+                                <td>
+                                    <span>Rs 12000</span>
+                                </td>
+                            </tr>
+                            <!-- row end -->
+                            <tr>
+                                <td>
+                                    <span>13-Jun-2023</span>
+                                    <span>09:23</span>
+                                </td>
+                                <td>
+                                    <span>897845563212</span>
+                                </td>
+                                <td class="">
+                                    <span>Deposite</span>
+                                </td>
+                                <td>
+                                    <span>New Delhi</span>
+                                </td>
+                                <td>
+                                    <span>Succesfully</span>
+                                </td>
+                                <td>
+                                    <span>Rs 12000</span>
+                                </td>
+                            </tr>
+                            <!-- row end -->
+                            <tr>
+                                <td>
+                                    <span>13-Jun-2023</span>
+                                    <span>09:23</span>
+                                </td>
+                                <td>
+                                    <span>897845563212</span>
+                                </td>
+                                <td class="">
+                                    <span>Deposite</span>
+                                </td>
+                                <td>
+                                    <span>New Delhi</span>
+                                </td>
+                                <td>
+                                    <span>Succesfully</span>
+                                </td>
+                                <td>
+                                    <span>Rs 12000</span>
+                                </td>
+                            </tr>
+                            <!-- row end -->
+                            <tr>
+                                <td>
+                                    <span>13-Jun-2023</span>
+                                    <span>09:23</span>
+                                </td>
+                                <td>
+                                    <span>897845563212</span>
+                                </td>
+                                <td class="">
+                                    <span>Deposite</span>
+                                </td>
+                                <td>
+                                    <span>New Delhi</span>
+                                </td>
+                                <td>
+                                    <span>Succesfully</span>
+                                </td>
+                                <td>
+                                    <span>Rs 12000</span>
+                                </td>
+                            </tr>
+                            <!-- row end -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- right side data end -->
+    </section><!-- Button trigger modal -->
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../assets/lib/bs5/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- fontawesome js start -->
+    <script src="../assets/lib/fw/fontawesome.js"></script>
+    <!-- chart js start here -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
+    <!-- chart js end here -->
+
+    <script src="../assets/js/layout.js"></script>
+
+    <script>
+        const data = [
+            { countX: 6, countY: 10 },
+            { countX: 8, countY: 20 },
+            { countX: 13, countY: 15 },
+            { countX: 15, countY: 25 },
+            { countX: 18, countY: 22 },
+            { countX: 23, countY: 30 },
+            { countX: 26, countY: 28 },
+        ];
+        new Chart(
+            document.getElementById('depositeChart'),
+            {
+                type: 'bar',
+
+                data: {
+                    labels: data.map(row => row.countX),
+                    datasets: [
+                        {
+                            label: 'Deposite',
+                            data: data.map(row => row.countY),
+                            barThickness: 20,
+                            backgroundColor: "#5cd65c",
+                        }
+                    ]
+                },
+                options: {
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: 'Last 7 Days deposite',
+                        },
+                        tooltip: {
+                            enabled: true
+                        }
+                    }
+                }
+            }
+        );
+
+
+
+        new Chart(
+            document.getElementById('withdrawalChart'),
+            {
+                type: 'bar',
+
+                data: {
+                    labels: data.map(row => row.countX),
+                    datasets: [
+                        {
+                            label: 'Withdrawal',
+                            data: data.map(row => row.countY),
+                            barThickness: 20,
+                            backgroundColor: "#ff471a"
+                        }
+                    ]
+                },
+                options: {
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: 'Last 7 Days withdrawal',
+                        },
+                        tooltip: {
+                            enabled: true
+                        }
+                    }
+                }
+            }
+        );
+        // ====================== https://www.chartjs.org/docs/latest/getting-started/usage.html  =====================
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pay-secure</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/icon/favicon.ico">
+    <link rel="stylesheet" href="../assets/style/css/frontpage.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+</head>
+
+<body class="">
+    <header class="top-header">
+        <div class="leftmob-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="left-logo">
+            <a href="../Dashboard/Dashboard-page.html">
+                <img src="../assets/images/icon/PaySecure-logo01.png" alt="" />
+            </a>
+        </div>
+        <div class="right-profile">
+            <div class="user-profile">
+                <div class="profile-name">DB</div>
+                <div class="profile-fullname">
+                    <p>dbadmin1</p>
+                    <div class="dropdown admin-box">
+                        <a href="javascript:void(0)" class="superadmin-dropdown" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Super Admin <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu admin-list" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-regular fa-user"></i>
+                                    <span>Profile</span></a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-regular fa-envelope"></i>
+                                    <span>My Messages</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-solid fa-lock"></i>
+                                    <span>Lock Screen</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../Change-password/Change-password.html">
+                                    <i class="fa-solid fa-key"></i>
+                                    <span>Change Password</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+    <section class="pay-mainarea">
+        <div class="left-menubar">
+            <div class="sidemenu-close">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+            <ul class="mainmenu-list">
+                <li class="">
+                    <a href="../Dashboard/Dashboard-page.html">
+                        <i class="fa-solid fa-table-cells-large"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../Manage-roles/Manage-Roles.html">
+                        <i class="fa-regular fa-user"></i>
+                        <span>Manage Roles</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="../Global-setting/Global-setting.html">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Global Setting</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../Merchant-limits/Merchant-Limits.html">
+                        <i class="fa-solid fa-suitcase"></i>
+                        <span>Merchant limits</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="../Banks/Bank-page.html">
+                        <i class="fa-solid fa-building-columns"></i>
+                        <span>Banks</span>
+                    </a>
+                </li>
+                <li class="inr-list">
+                    <a href="javascript:void(0)" class="inr-link">
+                        <i class="fa-solid fa-box"></i>
+                        <span>Charges</span>
+                        <i class="fa-solid fa-angle-down dwn-arr"></i>
+                    </a>
+                    <ul class="innerMenu-list">
+                        <li>
+                            <a href="../Charges/Bank-charges.html">
+                                <span>Bank</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Charges/Merchants-charges.html">
+                                <span>Merchant</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../Transactions/Transactions.html">
+                        <i class="fa-regular fa-credit-card"></i>
+                        <span>Transactions</span>
+                    </a>
+                </li>
+                <li class="inr-list">
+                    <a href="javascript:void(0)" class="inr-link">
+                        <i class="fa-regular fa-user"></i>
+                        <span>Profile Intelligence</span>
+                        <i class="fa-solid fa-angle-down dwn-arr"></i>
+                    </a>
+                    <ul class="innerMenu-list">
+                        <li>
+                            <a href="../Profile-intelligence/Strategies.html">
+                                <span>Strategies</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Profile-intelligence/Rule-Sets.html">
+                                <span>RuleSets</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Profile-intelligence/Decision-Matrix.html">
+                                <span>Decision Matrix</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../Analytic-report/Analytic-report.html">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <span>Analytic Report</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../Merchants/Merchants.html">
+                        <i class="fa-regular fa-clipboard"></i>
+                        <span>Merchants</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../MID-Limits/MID-Limits.html">
+                        <i class="fa-brands fa-codepen"></i>
+                        <span>MID Limits</span>
+                    </a>
+                </li>
+                <li class="inr-list">
+                    <a href="javascript:void(0)" class="inr-link">
+                        <i class="fa-solid fa-box"></i>
+                        <span>Blockings</span>
+                        <i class="fa-solid fa-angle-down dwn-arr"></i>
+                    </a>
+                    <ul class="innerMenu-list">
+                        <li>
+                            <a href="../Blockings/MID.html">
+                                <span>MID</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Blockings/BIN.html">
+                                <span>BIN</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Blockings/CARD.html">
+                                <span>Card</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Blockings/Customer-profile.html">
+                                <span>Customer Profile</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Blockings/Country.html">
+                                <span>Country</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../Settlements/Settlements.html">
+                        <i class="fa-regular fa-square-check"></i>
+                        <span>Settlements</span>
+                    </a>
+                </li>
+                <li class="inr-list">
+                    <a href="javascript:void(0)" class="inr-link">
+                        <i class="fa-solid fa-box"></i>
+                        <span>Utility</span>
+                        <i class="fa-solid fa-angle-down dwn-arr"></i>
+                    </a>
+                    <ul class="innerMenu-list pdlfm">
+                        <li>
+                            <a href="#">
+                                <span>Email Risk Analysis</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Manual-refunds/Manual-refunds.html">
+                                <span>Manual Refund</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Process Settlement / Chargeback</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Utility/Profile-scoring.html">
+                                <span>Profile Scoring</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="inr-list">
+                    <a href="javascript:void(0)" class="inr-link">
+                        <i class="fa-solid fa-yin-yang"></i>
+                        <span>P2p</span>
+                        <i class="fa-solid fa-angle-down dwn-arr"></i>
+                    </a>
+                    <ul class="innerMenu-list pdlfm">
+                        <li>
+                            <a href="../p2p/p2p-Dashboard.html">
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../p2p/Top-deposite.html">
+                                <span>Top Deposite</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../p2p/Top-withdrawal.html">
+                                <span>Top Withdrawal</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../p2p/settlements.html">
+                                <span>Settlements</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../p2p/Transections.html">
+                                <span>Transactions</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <span>Alert Config</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- left side menu end  -->
+        <div class="right-sidedata">
+            <div class="heading-bartitle">
+                <div class="left-bar">
+                    <h1>Global Setting</h1>
+                    <a href="#"><i class="fa-solid fa-table-cells-large"></i>
+                        <span>Dashboard</span></a>
+                </div>
+                <div class="right-bar">
+
+                </div>
+            </div>
+            <!-- heading bar end -->
+            <div class="py-main-contain">
+                <div class="row pagetitle-row">
+                    <div class="col">
+                        <div class="titleHead-colm">
+                            <i class="fa-solid fa-globe"></i>
+                            <h2>Global Setting</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- row end -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-global" type="button" role="tab" aria-controls="pills-home"
+                                    aria-selected="true">Global MID Limits</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-admin-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-admin" type="button" role="tab" aria-controls="pills-profile"
+                                    aria-selected="false">Admin Setting</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-Mapping-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-Mapping" type="button" role="tab"
+                                    aria-controls="pills-Mapping" aria-selected="true">Error Code Mapping</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-Action-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-Action" type="button" role="tab" aria-controls="pills-Action"
+                                    aria-selected="false">Error Code Action</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-global" role="tabpanel"
+                                aria-labelledby="pills-global-tab">
+                                <div class="card dash-cardbox">
+                                    <div class="card-body">
+                                        <h2 class="text-center mb-5 text-uppercase text-primary">Global MID Limits</h2>
+                                        <form action="">
+                                            <div class="row">
+                                                <h3 class="mb-4">No. of transactions limit for customers(card)</h3>
+                                                <div class="form-group col-md-3">
+                                                    <label>Hourly</label>
+                                                    <input type="text" class="form-control" value="3000" placeholder=""
+                                                        name="" />
+                                                </div>
+                                                <div class="form-group col-md-3">
+                                                    <label>Daily</label>
+                                                    <input type="text" class="form-control" value="3000" placeholder=""
+                                                        name="" />
+                                                </div>
+                                                <div class="form-group col-md-3">
+                                                    <label>Weekly</label>
+                                                    <input type="text" class="form-control" value="3000" placeholder=""
+                                                        name="" />
+                                                </div>
+                                                <div class="form-group col-md-3">
+                                                    <label>Monthly</label>
+                                                    <input type="text" class="form-control" value="50" placeholder=""
+                                                        name="" />
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <h3 class="mb-4">Transactions amount limit</h3>
+                                                <div class="form-group col-md-12">
+                                                    <label>Hourly Amount</label>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="slot-box">
+                                                                <label>Slot1</label>
+                                                                <input type="text" class="form-control" value="11000"
+                                                                    placeholder="" name="" />
+                                                                <span class="badge bg-secondary">EST</span>
+                                                                <span
+                                                                    class="badge bg-info text-dark">09:00AM-12:00AM</span>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="slot-box">
+                                                                <label>Slot2</label>
+                                                                <input type="text" class="form-control" value="1000"
+                                                                    placeholder="" name="" />
+                                                                <span class="badge bg-secondary">EST</span>
+                                                                <span
+                                                                    class="badge bg-info text-dark">09:00AM-12:00AM</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <label>Daily Amount</label>
+                                                    <input type="text" class="form-control" value="11000" placeholder=""
+                                                        name="" />
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <label>Weekly Amount</label>
+                                                    <input type="text" class="form-control" value="13000" placeholder=""
+                                                        name="" />
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <label>Monthly Amount</label>
+                                                    <input type="text" class="form-control" value="13000" placeholder=""
+                                                        name="" />
+                                                </div>
+
+                                            </div>
+                                            <div class="row">
+                                                <h3 class="mb-4">Minimum Time Hit Interval(In Minute)</h3>
+                                                <div class="form-group col-md-4">
+                                                    <input type="text" class="form-control" value="1" placeholder=""
+                                                        name="" />
+                                                    <span class="text-red">Note: value >=0</span>
+                                                </div>
+                                            </div>
+                                            <div class="row my-4">
+                                                <div class="form-group col-md-12">
+                                                    <button class="btn btn-primary d-block mx-auto">Submit</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <span class="text-red">*Note : Set -1 if you do not want to set limit</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-admin" role="tabpanel"
+                                aria-labelledby="pills-admin-tab">
+                                <div class="card dash-cardbox">
+                                    <div class="card-body">
+                                        <h2 class="text-center mb-5 text-uppercase text-primary">Admin Setting</h2>
+                                        <form action="">
+                                            <div class="row">
+                                                <div class="form-group col-md-4">
+                                                    <label>Transaction Overdue Hours</label>
+                                                    <input type="text" class="form-control" value="10" placeholder=""
+                                                        name="" />
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <label>Transaction Expired Days</label>
+                                                    <input type="text" class="form-control" value="5" placeholder=""
+                                                        name="" />
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <label>Testing 2D Card Number</label>
+                                                    <input type="text" class="form-control" value="4444333322221111"
+                                                        placeholder="" name="" />
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <label>Testing 3D Card Number</label>
+                                                    <input type="text" class="form-control" value="5555555555554444"
+                                                        placeholder="" name="" />
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <label>Testing CVC</label>
+                                                    <input type="text" class="form-control" value="345" placeholder=""
+                                                        name="" />
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label class="invisible">Submit</label>
+                                                    <button class="btn btn-primary d-block">Submit</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-Mapping" role="tabpanel"
+                                aria-labelledby="pills-Mapping-tab">
+                                <div class="card dash-cardbox">
+                                    <div class="card-body">
+                                        <form action="">
+                                            <h2 class=" text-uppercase text-primary text-center mb-5">Error Code
+                                                Mapping</h2>
+                                            <div class="row">
+                                                <div class="form-group col-md-4 mx-auto">
+                                                    <label>Bank</label>
+                                                    <div class="custom-select">
+                                                        <select class="form-control">
+                                                            <option label="Select Bank" value="0">Select Bank</option>
+                                                            <option label="abanks" value="11">abanks</option>
+                                                            <option label="abanksnew" value="28">abanksnew</option>
+                                                            <option label="aleta" value="27">aleta</option>
+                                                            <option label="erompay" value="15">erompay</option>
+                                                            <option label="hdfc" value="30" selected="selected">hdfc
+                                                            </option>
+                                                            <option label="interpay" value="29">interpay</option>
+                                                        </select>
+                                                        <i class="fa-solid fa-angle-down"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-8 mx-auto">
+                                                    <div class="row ">
+                                                        <div class="form-group col-md-6">
+                                                            <label>Paysecure code</label>
+                                                            <div class="custom-select">
+                                                                <select class="form-control" multiple>
+                                                                    <option label="" value="0">Paysecure code</option>
+                                                                    <option label="" value="">Error 1</option>
+                                                                    <option label="" value="">Error 2</option>
+                                                                    <option label="" value="">Error 3</option>
+                                                                </select>
+                                                                <i class="fa-solid fa-angle-down"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label>Processor code</label>
+                                                            <div class="custom-select">
+                                                                <div class="custom-select py-multiSelect">
+                                                                    <select class="form-control multiselect"
+                                                                        multiple="multiple">
+                                                                        <option value="Error 1">Error 1</option>
+                                                                        <option value="Error 2">Error 2</option>
+                                                                        <option value="Error 3">Error 3</option>
+                                                                        <option value="Error 4">Error 4</option>
+                                                                        <option value="Error 5">Error 5</option>
+                                                                        <option value="Error 6">Error 6</option>
+                                                                    </select>
+                                                                    <i class="fa-solid fa-angle-down"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mapAdd-btn">
+                                                        <button type="button" class="btn btn-primary addMore-btn"
+                                                            data-bs-toggle="modal"
+                                                            data-bs-target="#addError-codeModal">Add more <i
+                                                                class="fa-solid fa-circle-plus"></i></button>
+                                                        <button class="btn btn-primary btnMap">Map</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-Action" role="tabpanel"
+                                aria-labelledby="pills-Action-tab">
+                                <div class="card dash-cardbox">
+                                    <div class="card-body">
+                                        <h2 class="text-uppercase text-primary text-center mb-5">Error Code
+                                            Action</h2>
+                                        <form action="">
+                                            <div class="row">
+                                                <div class="form-group col-xl-4 col-lg-6 col-md-6 mx-auto">
+                                                    <label>Error Code Actions</label>
+                                                    <div class="custom-select">
+                                                        <div class="custom-select py-multiSelect">
+                                                            <select id="" class="form-control multiselect"
+                                                                multiple="multiple">
+                                                                <option value="Error 1">Error 1</option>
+                                                                <option value="Error 2">Error 2</option>
+                                                                <option value="Error 3">Error 3</option>
+                                                                <option value="Error 4">Error 4</option>
+                                                                <option value="Error 5">Error 5</option>
+                                                            </select>
+                                                            <i class="fa-solid fa-angle-down"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- row end -->
+                                            <div class="row">
+                                                <div class="col-xl-5 col-lg-8 col-md-8 mx-auto">
+                                                    <div class="row align-items-end">
+                                                        <div class="form-group col-md-4">
+                                                            <label>Action</label>
+                                                            <div class="custom-select">
+                                                                <select class="form-control">
+                                                                    <option label="" value="0">Select Action</option>
+                                                                    <option label="" value="1">Block</option>
+                                                                    <option label="" value="2">UnBlock</option>
+                                                                </select>
+                                                                <i class="fa-solid fa-angle-down"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group col-md-5">
+                                                            <label>Duration</label>
+                                                            <div class="input-group duration-actInp">
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="Enter value">
+                                                                <button class="btn btn-primary dropdown-toggle"
+                                                                    type="button" data-bs-toggle="dropdown"
+                                                                    aria-expanded="false">Unit</button>
+                                                                <ul
+                                                                    class="dropdown-menu dropdown-menu-end minWidth">
+                                                                    <li><a class="dropdown-item" href="#">Min</a>
+                                                                    </li>
+                                                                    <li><a class="dropdown-item" href="#">hr.</a>
+                                                                    </li>
+                                                                    <li><a class="dropdown-item" href="#">Day</a>
+                                                                    </li>
+                                                                    <li><a class="dropdown-item" href="#">Week</a>
+                                                                    </li>
+                                                                    <li><a class="dropdown-item" href="#">Month</a>
+                                                                    </li>
+                                                                    <li><a class="dropdown-item" href="#">Year</a>
+                                                                    </li>
+                                                                </ul>
+                                                                <!-- <div class="custom-select">
+                                                                    <select
+                                                                        class="form-control bg-primary text-white">
+                                                                        <option label="" value="0">Min</option>
+                                                                        <option label="" value="1">hr</option>
+                                                                        <option label="" value="2">Day</option>
+                                                                        <option label="" value="0">Week</option>
+                                                                        <option label="" value="1">Month</option>
+                                                                        <option label="" value="2">Year</option>
+                                                                    </select>
+                                                                    <i class="fa-solid fa-angle-down"></i>
+                                                                </div> -->
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group col-xl col-lg-3 col-md-3">
+                                                            <button class="btn btn-primary w-100">save</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <div class="row">
+                                            <!-- <hr class="my-4"> -->
+                                            <div class="col-xl-5 col-md-8 mx-auto ">
+                                                <div class="table-responsive errorCode-actTable mb-4">
+                                                    <table class="table table-bordered">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col" class="text-center act-thError "
+                                                                    colspan="2">Error codes</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <span>Error Code 1</span>
+                                                                </td>
+                                                                <td class="act-tbError">
+                                                                    <button
+                                                                        class="btn btn-danger btn-sm error-dlt">Delete
+                                                                        <i
+                                                                            class="fa-regular fa-trash-can "></i></button>
+                                                                    <button class="btn btn-success btn-sm"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#editError-codeActionModal">Edit
+                                                                        <i
+                                                                            class="fa-regular fa-pen-to-square"></i></button>
+                                                                </td>
+                                                            </tr>
+                                                            <!-- row end -->
+                                                            <tr>
+                                                                <td>
+                                                                    <span>Error Code 1</span>
+                                                                </td>
+                                                                <td class="act-tbError">
+                                                                    <button
+                                                                        class="btn btn-danger btn-sm error-dlt">Delete
+                                                                        <i
+                                                                            class="fa-regular fa-trash-can "></i></button>
+                                                                    <button class="btn btn-success btn-sm"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#editError-codeActionModal">Edit
+                                                                        <i
+                                                                            class="fa-regular fa-pen-to-square"></i></button>
+                                                                </td>
+                                                            </tr>
+                                                            <!-- row end -->
+                                                            <tr>
+                                                                <td>
+                                                                    <span>Error Code 1</span>
+                                                                </td>
+                                                                <td class="act-tbError">
+                                                                    <button
+                                                                        class="btn btn-danger btn-sm error-dlt">Delete
+                                                                        <i
+                                                                            class="fa-regular fa-trash-can "></i></button>
+                                                                    <button class="btn btn-success btn-sm"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#editError-codeActionModal">Edit
+                                                                        <i
+                                                                            class="fa-regular fa-pen-to-square"></i></button>
+                                                                </td>
+                                                            </tr>
+                                                            <!-- row end -->
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <nav aria-label="..." class="py-paginate">
+                                                    <ul class="pagination">
+                                                        <li class="page-item disabled">
+                                                            <a class="page-link" href="#" tabindex="-1"
+                                                                aria-disabled="true">Previous</a>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                        <li class="page-item active" aria-current="page">
+                                                            <a class="page-link" href="#">2</a>
+                                                        </li>
+                                                        <li class="page-item" aria-current="page">
+                                                            <a class="page-link" href="#">...</a>
+                                                        </li>
+                                                        <li class="page-item " aria-current="page">
+                                                            <a class="page-link" href="#">9</a>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#">Next</a>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- col end -->
+                </div>
+                <!-- row end -->
+            </div>
+        </div>
+        <!-- right side data end -->
+    </section><!-- Button trigger modal -->
+
+    <!-- Add Error with code Modal -->
+    <div class="modal pay-modal fade" id="addError-codeModal" tabindex="-1" aria-labelledby="Add Error code"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Add Paysecure Error Code</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="row">
+                            <div class="form-group col-md-12">
+                                <label>Add error</label>
+                                <input type="text" placeholder="Enter error with code " class="form-control" />
+                            </div>
+                            <div class="form-group col-md-12">
+                                <button class="btn btn-danger">Cancel</button>
+                                <button class="btn btn-success">Save</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Error Code Action Edit Modal -->
+    <div class="modal pay-modal fade" id="editError-codeActionModal" tabindex="-1"
+        aria-labelledby="Edit Error code action" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Error Code Action Edit</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="row">
+                            <div class="form-group col-md-12">
+                                <label>Edit error</label>
+                                <input type="text" placeholder="Enter error with code " value="Error Code Action1"
+                                    class="form-control" />
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label>Action</label>
+                                <div class="custom-select">
+                                    <select class="form-control">
+                                        <option label="Select Bank" value="0">Action</option>
+                                        <option label="" value="1">Block</option>
+                                        <option label="" value="2">UnBlock</option>
+                                    </select>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label>Duration</label>
+                                <div class="custom-select">
+                                    <select class="form-control">
+                                        <option label="" value="0">Select duration</option>
+                                        <option label="" value="">5 min</option>
+                                        <option label="" value="">15 min</option>
+                                        <option label="" value="">30 min</option>
+                                        <option label="" value="">1 hr</option>
+                                        <option label="" value="">1 Day</option>
+                                        <option label="" value="">1 Week</option>
+                                        <option label="" value="">1 Month</option>
+                                        <option label="" value="">1 Year</option>
+                                    </select>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <button class="btn btn-danger">Cancel</button>
+                                <button class="btn btn-success">Save</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../assets/lib/bs5/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- fontawesome js start -->
+    <script src="../assets/lib/fw/fontawesome.js"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="../assets/js/layout.js"></script>
+
+    <script>
+        // ==================== Sweet alert for error delete ===================//
+        $(".error-dlt").on("click", function () {
+            swal({
+                title: "Are you sure?",
+                text: "Once deleted, you will not be able to recover this error!",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+            })
+                .then((willDelete) => {
+                    if (willDelete) {
+                        swal("Poof! Your error has been deleted!", {
+                            icon: "success",
+                        });
+                    } else {
+                        swal("Your imaginary error is safe!");
+                    }
+                });
+        });
+    </script>
+</body>
+
+</html>

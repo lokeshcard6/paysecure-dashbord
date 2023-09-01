@@ -1,0 +1,1967 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pay-secure</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/icon/favicon.ico" />
+  <link rel="stylesheet" href="../assets/style/css/frontpage.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body class="">
+  <header class="top-header">
+    <div class="leftmob-menu">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <div class="left-logo">
+      <a href="../Dashboard/Dashboard-page.html">
+        <img src="../assets/images/icon/PaySecure-logo01.png" alt="" />
+      </a>
+    </div>
+    <div class="right-profile">
+      <div class="user-profile">
+        <div class="profile-name">DB</div>
+        <div class="profile-fullname">
+          <p>dbadmin1</p>
+          <div class="dropdown admin-box">
+            <a href="javascript:void(0)" class="superadmin-dropdown" type="button" id="dropdownMenuButton1"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Super Admin <i class="fa-solid fa-angle-down"></i>
+            </a>
+            <ul class="dropdown-menu admin-list" aria-labelledby="dropdownMenuButton1">
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="fa-regular fa-user"></i>
+                  <span>Profile</span></a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="fa-regular fa-envelope"></i>
+                  <span>My Messages</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="fa-solid fa-lock"></i>
+                  <span>Lock Screen</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../Change-password/Change-password.html">
+                  <i class="fa-solid fa-key"></i>
+                  <span>Change Password</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header end -->
+  <section class="pay-mainarea">
+    <div class="left-menubar">
+      <div class="sidemenu-close">
+        <i class="fa-solid fa-angle-left"></i>
+      </div>
+      <ul class="mainmenu-list">
+        <li class="">
+          <a href="../Dashboard/Dashboard-page.html">
+            <i class="fa-solid fa-table-cells-large"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="../Manage-roles/Manage-Roles.html">
+            <i class="fa-regular fa-user"></i>
+            <span>Manage Roles</span>
+          </a>
+        </li>
+        <li>
+          <a href="../Global-setting/Global-setting.html">
+            <i class="fa-solid fa-gear"></i>
+            <span>Global Setting</span>
+          </a>
+        </li>
+        <li>
+          <a href="../Merchant-limits/Merchant-Limits.html">
+            <i class="fa-solid fa-suitcase"></i>
+            <span>Merchant limits</span>
+          </a>
+        </li>
+        <li class="">
+          <a href="../Banks/Bank-page.html">
+            <i class="fa-solid fa-building-columns"></i>
+            <span>Banks</span>
+          </a>
+        </li>
+        <li class="inr-list">
+          <a href="javascript:void(0)" class="inr-link">
+            <i class="fa-solid fa-box"></i>
+            <span>Charges</span>
+            <i class="fa-solid fa-angle-down dwn-arr"></i>
+          </a>
+          <ul class="innerMenu-list">
+            <li>
+              <a href="../Charges/Bank-charges.html">
+                <span>Bank</span>
+              </a>
+            </li>
+            <li>
+              <a href="../Charges/Merchants-charges.html">
+                <span>Merchant</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="../Transactions/Transactions.html">
+            <i class="fa-regular fa-credit-card"></i>
+            <span>Transactions</span>
+          </a>
+        </li>
+        <li class="inr-list">
+          <a href="javascript:void(0)" class="inr-link">
+            <i class="fa-regular fa-user"></i>
+            <span>Profile Intelligence</span>
+            <i class="fa-solid fa-angle-down dwn-arr"></i>
+          </a>
+          <ul class="innerMenu-list">
+            <li>
+              <a href="../Profile-intelligence/Strategies.html">
+                <span>Strategies</span>
+              </a>
+            </li>
+            <li>
+              <a href="../Profile-intelligence/Rule-Sets.html">
+                <span>RuleSets</span>
+              </a>
+            </li>
+            <li>
+              <a href="../Profile-intelligence/Decision-Matrix.html">
+                <span>Decision Matrix</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="../Analytic-report/Analytic-report.html">
+            <i class="fa-solid fa-chart-simple"></i>
+            <span>Analytic Report</span>
+          </a>
+        </li>
+        <li>
+          <a href="../Merchants/Merchants.html">
+            <i class="fa-regular fa-clipboard"></i>
+            <span>Merchants</span>
+          </a>
+        </li>
+        <li>
+          <a href="../MID-Limits/MID-Limits.html">
+            <i class="fa-brands fa-codepen"></i>
+            <span>MID Limits</span>
+          </a>
+        </li>
+        <li class="inr-list">
+          <a href="javascript:void(0)" class="inr-link">
+            <i class="fa-solid fa-box"></i>
+            <span>Blockings</span>
+            <i class="fa-solid fa-angle-down dwn-arr"></i>
+          </a>
+          <ul class="innerMenu-list">
+            <li>
+              <a href="../Blockings/MID.html">
+                <span>MID</span>
+              </a>
+            </li>
+            <li>
+              <a href="../Blockings/BIN.html">
+                <span>BIN</span>
+              </a>
+            </li>
+            <li>
+              <a href="../Blockings/CARD.html">
+                <span>Card</span>
+              </a>
+            </li>
+            <li>
+              <a href="../Blockings/Customer-profile.html">
+                <span>Customer Profile</span>
+              </a>
+            </li>
+            <li>
+              <a href="../Blockings/Country.html">
+                <span>Country</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="../Settlements/Settlements.html">
+            <i class="fa-regular fa-square-check"></i>
+            <span>Settlements</span>
+          </a>
+        </li>
+        <li class="inr-list">
+          <a href="javascript:void(0)" class="inr-link">
+            <i class="fa-solid fa-box"></i>
+            <span>Utility</span>
+            <i class="fa-solid fa-angle-down dwn-arr"></i>
+          </a>
+          <ul class="innerMenu-list pdlfm">
+            <li>
+              <a href="#">
+                <span>Email Risk Analysis</span>
+              </a>
+            </li>
+            <li>
+              <a href="../Manual-refunds/Manual-refunds.html">
+                <span>Manual Refund</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>Process Settlement / Chargeback</span>
+              </a>
+            </li>
+            <li>
+              <a href="../Utility/Profile-scoring.html">
+                <span>Profile Scoring</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="inr-list">
+          <a href="javascript:void(0)" class="inr-link">
+              <i class="fa-solid fa-yin-yang"></i>
+              <span>P2p</span>
+              <i class="fa-solid fa-angle-down dwn-arr"></i>
+          </a>
+          <ul class="innerMenu-list pdlfm">
+              <li>
+                  <a href="../p2p/p2p-Dashboard.html">
+                      <span>Dashboard</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="../p2p/Top-deposite.html">
+                      <span>Top Deposite</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="../p2p/Top-withdrawal.html">
+                      <span>Top Withdrawal</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="../p2p/settlements.html">
+                      <span>Settlements</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="../p2p/Transections.html">
+                      <span>Transactions</span>
+                  </a>
+              </li>
+          </ul>
+      </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <span>Alert Config</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- left side menu end  -->
+    <div class="right-sidedata">
+      <div class="heading-bartitle">
+        <div class="left-bar">
+          <h1>Rulesets</h1>
+          <a href="#"><i class="fa-solid fa-table-cells-large"></i>
+            <span> Dashboard</span></a>
+        </div>
+        <div class="right-bar"></div>
+      </div>
+      <!-- heading bar end -->
+      <div class="py-main-contain">
+        <div class="row pagetitle-row">
+          <div class="col">
+            <div class="titleHead-colm">
+              <i class="fa-solid fa-pen-ruler"></i>
+              <h2>Rulesets</h2>
+            </div>
+          </div>
+        </div>
+        <!-- row end  -->
+        <div class="mb-4">
+          <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addRule-set">
+            Add Rule set
+          </button>
+        </div>
+        <div class="row ruleSet-boxRow">
+          <div class="col-md-2 leftTab-box">
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <button class="nav-link active" id="v-pills-emailRuleset-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-emailRuleset" type="button" role="tab" aria-controls="v-pills-emailRuleset"
+                aria-selected="true">
+                Email Ruleset
+              </button>
+              <button class="nav-link" id="v-pills-deviceRuleset-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-deviceRuleset" type="button" role="tab" aria-controls="v-pills-deviceRuleset"
+                aria-selected="false">
+                Device Ruleset
+              </button>
+              <button class="nav-link" id="v-pills-ipRuleset-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-ipRuleset" type="button" role="tab" aria-controls="v-pills-ipRuleset"
+                aria-selected="false">
+                IP Ruleset
+              </button>
+              <button class="nav-link" id="v-pills-geoRuleset-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-geoRuleset" type="button" role="tab" aria-controls="v-pills-geoRuleset"
+                aria-selected="false">
+                Geo Ruleset
+              </button>
+            </div>
+          </div>
+          <div class="col-md-9 rightData-box">
+            <div class="tab-content" id="v-pills-tabContent">
+              <div class="tab-pane fade show active" id="v-pills-emailRuleset" role="tabpanel"
+                aria-labelledby="v-pills-emailRuleset-tab">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="mb-3">
+                      <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#decisionCreate-set">Add
+                        Rule</button>
+                    </div>
+                    <div class="table-responsive ruleSet-Table mb-4">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th scope="col" class="srNo-td">#</th>
+                            <th scope="col" class="">Email Rules</th>
+                            <th scope="col" class="scoreTd">Score</th>
+                            <th scope="col" class="actnRul-td">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <span>1</span>
+                            </td>
+                            <td>
+                              <span>Rule 1</span>
+                            </td>
+                            <td class="">
+                              <span>40</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editError-ruleset">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                          <tr>
+                            <td>
+                              <span>2</span>
+                            </td>
+                            <td>
+                              <span>Rule 2</span>
+                            </td>
+                            <td class="">
+                              <span>40</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editError-ruleset">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                          <tr>
+                            <td>
+                              <span>3</span>
+                            </td>
+                            <td>
+                              <span>Rule 3</span>
+                            </td>
+                            <td class="">
+                              <span>40</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editError-ruleset">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                          <tr>
+                            <td>
+                              <span>4</span>
+                            </td>
+                            <td>
+                              <span>Rule 4</span>
+                            </td>
+                            <td class="">
+                              <span>40</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editError-ruleset">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                          <tr>
+                            <td>
+                              <span>5</span>
+                            </td>
+                            <td>
+                              <span>Rule 5</span>
+                            </td>
+                            <td class="">
+                              <span>40</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editError-ruleset">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                        </tbody>
+                      </table>
+                    </div>
+                    <h2>Risk Level</h2>
+                    <div class="table-responsive riskLevel-Table mb-4">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th scope="col" class="">Total Sc</th>
+                            <th scope="col" class="">Risk Level</th>
+                            <th scope="col" class="">Decision</th>
+                            <th scope="col" class="tdAcn">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <span>-1000</span>
+                            </td>
+                            <td>
+                              <span>App Error (if data fetch has bug)</span>
+                            </td>
+                            <td class="">
+                              <span>Set status to Decline</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editRisk-level">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                              <button class="btn btn-danger btn-sm error-dlt btnDlt-alert">
+                                Delete <i class="fa-regular fa-trash-can"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                          <tr>
+                            <td>
+                              <span>0 to 0</span>
+                            </td>
+                            <td>
+                              <span>Fail</span>
+                            </td>
+                            <td class="">
+                              <span>Set status to Decline</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editRisk-level">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                              <button class="btn btn-danger btn-sm error-dlt btnDlt-alert">
+                                Delete <i class="fa-regular fa-trash-can"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                          <tr>
+                            <td>
+                              <span>1 to 10</span>
+                            </td>
+                            <td>
+                              <span>Only Breach Found</span>
+                            </td>
+                            <td class="">
+                              <span>set status to Decline No further Checks</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editRisk-level">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                              <button class="btn btn-danger btn-sm error-dlt btnDlt-alert">
+                                Delete <i class="fa-regular fa-trash-can"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                          <tr>
+                            <td>
+                              <span>10 to 30</span>
+                            </td>
+                            <td>
+                              <span>Only Old Account</span>
+                            </td>
+                            <td class="">
+                              <span>set status to referred assign to Referral
+                                Team if accepted then</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editRisk-level">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                              <button class="btn btn-danger btn-sm error-dlt btnDlt-alert">
+                                Delete <i class="fa-regular fa-trash-can"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                          <tr>
+                            <td>
+                              <span>30 to 40</span>
+                            </td>
+                            <td>
+                              <span>Old Account with Breach History</span>
+                            </td>
+                            <td class="">
+                              <span>set status to referred assign to Referral
+                                Team if accepted then</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editRisk-level">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                              <button class="btn btn-danger btn-sm error-dlt btnDlt-alert">
+                                Delete <i class="fa-regular fa-trash-can"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                          <tr>
+                            <td>
+                              <span>40 to 10</span>
+                            </td>
+                            <td>
+                              <span>Account found on various social</span>
+                            </td>
+                            <td class="">
+                              <span>Set status to next Strategy then run
+                                IP-Rule-Strategy</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editRisk-level">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                              <button class="btn btn-danger btn-sm error-dlt btnDlt-alert">
+                                Delete <i class="fa-regular fa-trash-can"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                          <tr>
+                            <td>
+                              <span>100 to 1</span>
+                            </td>
+                            <td>
+                              <span>Old genuine account</span>
+                            </td>
+                            <td class="">
+                              <span>Set status to next Strategy then run
+                                IP-Rule-Strategy</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editRisk-level">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                              <button class="btn btn-danger btn-sm error-dlt btnDlt-alert">
+                                Delete <i class="fa-regular fa-trash-can"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="v-pills-deviceRuleset" role="tabpanel"
+                aria-labelledby="v-pills-deviceRuleset-tab">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="mb-3">
+                      <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#decisionCreate-set">Add Rule</button>
+                    </div>
+                    <div class="table-responsive ruleSet-Table mb-4">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th scope="col" class="srNo-td">#</th>
+                            <th scope="col" class="">Device Rules</th>
+                            <th scope="col" class="scoreTd">Score</th>
+                            <th scope="col" class="actnRul-td">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <span>1</span>
+                            </td>
+                            <td>
+                              <span>Rule 1</span>
+                            </td>
+                            <td class="">
+                              <span>40</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editError-ruleset">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                          <tr>
+                            <td>
+                              <span>2</span>
+                            </td>
+                            <td>
+                              <span>Rule 2</span>
+                            </td>
+                            <td class="">
+                              <span>40</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editError-ruleset">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                          <tr>
+                            <td>
+                              <span>3</span>
+                            </td>
+                            <td>
+                              <span>Rule 3</span>
+                            </td>
+                            <td class="">
+                              <span>40</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editError-ruleset">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                          <tr>
+                            <td>
+                              <span>4</span>
+                            </td>
+                            <td>
+                              <span>Rule 4</span>
+                            </td>
+                            <td class="">
+                              <span>40</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editError-ruleset">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                          <tr>
+                            <td>
+                              <span>5</span>
+                            </td>
+                            <td>
+                              <span>Rule 5</span>
+                            </td>
+                            <td class="">
+                              <span>40</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editError-ruleset">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                        </tbody>
+                      </table>
+                    </div>
+                    <h2>Risk Level</h2>
+                    <div class="table-responsive riskLevel-Table mb-4">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th scope="col" class="">Total Sc</th>
+                            <th scope="col" class="">Risk Level</th>
+                            <th scope="col" class="">Decision</th>
+                            <th scope="col" class="tdAcn">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <span>-1000</span>
+                            </td>
+                            <td>
+                              <span>App Error (if data fetch has bug)</span>
+                            </td>
+                            <td class="">
+                              <span>Set status to Decline</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editRisk-level">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                              <button class="btn btn-danger btn-sm error-dlt btnDlt-alert">
+                                Delete <i class="fa-regular fa-trash-can"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                          <tr>
+                            <td>
+                              <span>0 to 0</span>
+                            </td>
+                            <td>
+                              <span>Fail</span>
+                            </td>
+                            <td class="">
+                              <span>Set status to Decline</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editRisk-level">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                              <button class="btn btn-danger btn-sm error-dlt btnDlt-alert">
+                                Delete <i class="fa-regular fa-trash-can"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                          <tr>
+                            <td>
+                              <span>1 to 10</span>
+                            </td>
+                            <td>
+                              <span>Only Breach Found</span>
+                            </td>
+                            <td class="">
+                              <span>set status to Decline No further Checks</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editRisk-level">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                              <button class="btn btn-danger btn-sm error-dlt btnDlt-alert">
+                                Delete <i class="fa-regular fa-trash-can"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                          <tr>
+                            <td>
+                              <span>10 to 30</span>
+                            </td>
+                            <td>
+                              <span>Only Old Account</span>
+                            </td>
+                            <td class="">
+                              <span>set status to referred assign to Referral
+                                Team if accepted then</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editRisk-level">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                              <button class="btn btn-danger btn-sm error-dlt btnDlt-alert">
+                                Delete <i class="fa-regular fa-trash-can"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                          <tr>
+                            <td>
+                              <span>30 to 40</span>
+                            </td>
+                            <td>
+                              <span>Old Account with Breach History</span>
+                            </td>
+                            <td class="">
+                              <span>set status to referred assign to Referral
+                                Team if accepted then</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editRisk-level">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                              <button class="btn btn-danger btn-sm error-dlt btnDlt-alert">
+                                Delete <i class="fa-regular fa-trash-can"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                          <tr>
+                            <td>
+                              <span>40 to 10</span>
+                            </td>
+                            <td>
+                              <span>Account found on various social</span>
+                            </td>
+                            <td class="">
+                              <span>Set status to next Strategy then run
+                                IP-Rule-Strategy</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editRisk-level">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                              <button class="btn btn-danger btn-sm error-dlt btnDlt-alert">
+                                Delete <i class="fa-regular fa-trash-can"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                          <tr>
+                            <td>
+                              <span>100 to 1</span>
+                            </td>
+                            <td>
+                              <span>Old genuine account</span>
+                            </td>
+                            <td class="">
+                              <span>Set status to next Strategy then run
+                                IP-Rule-Strategy</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editRisk-level">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                              <button class="btn btn-danger btn-sm error-dlt btnDlt-alert">
+                                Delete <i class="fa-regular fa-trash-can"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="v-pills-ipRuleset" role="tabpanel" aria-labelledby="v-pills-ipRuleset-tab">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="mb-3">
+                      <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#decisionCreate-set">Add Rule</button>
+                    </div>
+                    <div class="table-responsive ruleSet-Table mb-4">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th scope="col" class="srNo-td">#</th>
+                            <th scope="col" class="">IP Rules</th>
+                            <th scope="col" class="scoreTd">Score</th>
+                            <th scope="col" class="actnRul-td">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <span>1</span>
+                            </td>
+                            <td>
+                              <span>Rule 1</span>
+                            </td>
+                            <td class="">
+                              <span>40</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editError-ruleset">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                          <tr>
+                            <td>
+                              <span>2</span>
+                            </td>
+                            <td>
+                              <span>Rule 2</span>
+                            </td>
+                            <td class="">
+                              <span>40</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editError-ruleset">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                          <tr>
+                            <td>
+                              <span>3</span>
+                            </td>
+                            <td>
+                              <span>Rule 3</span>
+                            </td>
+                            <td class="">
+                              <span>40</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editError-ruleset">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                          <tr>
+                            <td>
+                              <span>4</span>
+                            </td>
+                            <td>
+                              <span>Rule 4</span>
+                            </td>
+                            <td class="">
+                              <span>40</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editError-ruleset">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                          <tr>
+                            <td>
+                              <span>5</span>
+                            </td>
+                            <td>
+                              <span>Rule 5</span>
+                            </td>
+                            <td class="">
+                              <span>40</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editError-ruleset">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                        </tbody>
+                      </table>
+                    </div>
+                    <h2>Risk Level</h2>
+                    <div class="table-responsive riskLevel-Table mb-4">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th scope="col" class="">Total Sc</th>
+                            <th scope="col" class="">Risk Level</th>
+                            <th scope="col" class="">Decision</th>
+                            <th scope="col" class="tdAcn">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <span>-1000</span>
+                            </td>
+                            <td>
+                              <span>App Error (if data fetch has bug)</span>
+                            </td>
+                            <td class="">
+                              <span>Set status to Decline</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editRisk-level">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                              <button class="btn btn-danger btn-sm error-dlt btnDlt-alert">
+                                Delete <i class="fa-regular fa-trash-can"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                          <tr>
+                            <td>
+                              <span>0 to 0</span>
+                            </td>
+                            <td>
+                              <span>Fail</span>
+                            </td>
+                            <td class="">
+                              <span>Set status to Decline</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editRisk-level">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                              <button class="btn btn-danger btn-sm error-dlt btnDlt-alert">
+                                Delete <i class="fa-regular fa-trash-can"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                          <tr>
+                            <td>
+                              <span>1 to 10</span>
+                            </td>
+                            <td>
+                              <span>Only Breach Found</span>
+                            </td>
+                            <td class="">
+                              <span>set status to Decline No further Checks</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editRisk-level">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                              <button class="btn btn-danger btn-sm error-dlt btnDlt-alert">
+                                Delete <i class="fa-regular fa-trash-can"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                          <tr>
+                            <td>
+                              <span>10 to 30</span>
+                            </td>
+                            <td>
+                              <span>Only Old Account</span>
+                            </td>
+                            <td class="">
+                              <span>set status to referred assign to Referral
+                                Team if accepted then</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editRisk-level">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                              <button class="btn btn-danger btn-sm error-dlt btnDlt-alert">
+                                Delete <i class="fa-regular fa-trash-can"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                          <tr>
+                            <td>
+                              <span>30 to 40</span>
+                            </td>
+                            <td>
+                              <span>Old Account with Breach History</span>
+                            </td>
+                            <td class="">
+                              <span>set status to referred assign to Referral
+                                Team if accepted then</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editRisk-level">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                              <button class="btn btn-danger btn-sm error-dlt btnDlt-alert">
+                                Delete <i class="fa-regular fa-trash-can"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                          <tr>
+                            <td>
+                              <span>40 to 10</span>
+                            </td>
+                            <td>
+                              <span>Account found on various social</span>
+                            </td>
+                            <td class="">
+                              <span>Set status to next Strategy then run
+                                IP-Rule-Strategy</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editRisk-level">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                              <button class="btn btn-danger btn-sm error-dlt btnDlt-alert">
+                                Delete <i class="fa-regular fa-trash-can"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                          <tr>
+                            <td>
+                              <span>100 to 1</span>
+                            </td>
+                            <td>
+                              <span>Old genuine account</span>
+                            </td>
+                            <td class="">
+                              <span>Set status to next Strategy then run
+                                IP-Rule-Strategy</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editRisk-level">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                              <button class="btn btn-danger btn-sm error-dlt btnDlt-alert">
+                                Delete <i class="fa-regular fa-trash-can"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="v-pills-geoRuleset" role="tabpanel"
+                aria-labelledby="v-pills-geoRuleset-tab">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="mb-3">
+                      <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#decisionCreate-set">Add Rule</button>
+                    </div>
+                    <div class="table-responsive ruleSet-Table mb-4">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th scope="col" class="srNo-td">#</th>
+                            <th scope="col" class="">Geo Rules</th>
+                            <th scope="col" class="scoreTd">Score</th>
+                            <th scope="col" class="actnRul-td">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <span>1</span>
+                            </td>
+                            <td>
+                              <span>Rule 1</span>
+                            </td>
+                            <td class="">
+                              <span>40</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editError-ruleset">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                          <tr>
+                            <td>
+                              <span>2</span>
+                            </td>
+                            <td>
+                              <span>Rule 2</span>
+                            </td>
+                            <td class="">
+                              <span>40</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editError-ruleset">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                          <tr>
+                            <td>
+                              <span>3</span>
+                            </td>
+                            <td>
+                              <span>Rule 3</span>
+                            </td>
+                            <td class="">
+                              <span>40</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editError-ruleset">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                          <tr>
+                            <td>
+                              <span>4</span>
+                            </td>
+                            <td>
+                              <span>Rule 4</span>
+                            </td>
+                            <td class="">
+                              <span>40</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editError-ruleset">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                          <tr>
+                            <td>
+                              <span>5</span>
+                            </td>
+                            <td>
+                              <span>Rule 5</span>
+                            </td>
+                            <td class="">
+                              <span>40</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editError-ruleset">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                        </tbody>
+                      </table>
+                    </div>
+                    <h2>Risk Level</h2>
+                    <div class="table-responsive riskLevel-Table mb-4">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th scope="col" class="">Total Sc</th>
+                            <th scope="col" class="">Risk Level</th>
+                            <th scope="col" class="">Decision</th>
+                            <th scope="col" class="tdAcn">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <span>-1000</span>
+                            </td>
+                            <td>
+                              <span>App Error (if data fetch has bug)</span>
+                            </td>
+                            <td class="">
+                              <span>Set status to Decline</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editRisk-level">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                              <button class="btn btn-danger btn-sm error-dlt btnDlt-alert">
+                                Delete <i class="fa-regular fa-trash-can"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                          <tr>
+                            <td>
+                              <span>0 to 0</span>
+                            </td>
+                            <td>
+                              <span>Fail</span>
+                            </td>
+                            <td class="">
+                              <span>Set status to Decline</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editRisk-level">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                              <button class="btn btn-danger btn-sm error-dlt btnDlt-alert">
+                                Delete <i class="fa-regular fa-trash-can"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                          <tr>
+                            <td>
+                              <span>1 to 10</span>
+                            </td>
+                            <td>
+                              <span>Only Breach Found</span>
+                            </td>
+                            <td class="">
+                              <span>set status to Decline No further Checks</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editRisk-level">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                              <button class="btn btn-danger btn-sm error-dlt btnDlt-alert">
+                                Delete <i class="fa-regular fa-trash-can"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                          <tr>
+                            <td>
+                              <span>10 to 30</span>
+                            </td>
+                            <td>
+                              <span>Only Old Account</span>
+                            </td>
+                            <td class="">
+                              <span>set status to referred assign to Referral
+                                Team if accepted then</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editRisk-level">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                              <button class="btn btn-danger btn-sm error-dlt btnDlt-alert">
+                                Delete <i class="fa-regular fa-trash-can"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                          <tr>
+                            <td>
+                              <span>30 to 40</span>
+                            </td>
+                            <td>
+                              <span>Old Account with Breach History</span>
+                            </td>
+                            <td class="">
+                              <span>set status to referred assign to Referral
+                                Team if accepted then</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editRisk-level">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                              <button class="btn btn-danger btn-sm error-dlt btnDlt-alert">
+                                Delete <i class="fa-regular fa-trash-can"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                          <tr>
+                            <td>
+                              <span>40 to 10</span>
+                            </td>
+                            <td>
+                              <span>Account found on various social</span>
+                            </td>
+                            <td class="">
+                              <span>Set status to next Strategy then run
+                                IP-Rule-Strategy</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editRisk-level">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                              <button class="btn btn-danger btn-sm error-dlt btnDlt-alert">
+                                Delete <i class="fa-regular fa-trash-can"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                          <tr>
+                            <td>
+                              <span>100 to 1</span>
+                            </td>
+                            <td>
+                              <span>Old genuine account</span>
+                            </td>
+                            <td class="">
+                              <span>Set status to next Strategy then run
+                                IP-Rule-Strategy</span>
+                            </td>
+                            <td>
+                              <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editRisk-level">
+                                Edit
+                                <i class="fa-regular fa-pen-to-square"></i>
+                              </button>
+                              <button class="btn btn-danger btn-sm error-dlt btnDlt-alert">
+                                Delete <i class="fa-regular fa-trash-can"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- row end -->
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- right side data end -->
+  </section>
+  <!-- Button trigger modal -->
+
+  <!-- Modal for Edit Ruleset  -->
+  <div class="modal pay-modal fade" id="editError-ruleset" tabindex="-1" aria-labelledby="staticBackdropLabel"
+    aria-modal="true" role="dialog">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Edit Ruleset</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="row">
+              <div class="form-group col-md-12">
+                <label>Rule type</label>
+                <input type="text" placeholder="Enter rule" value="" class="form-control" />
+              </div>
+              <div class="form-group col-md-12">
+                <label>Score</label>
+                <input type="text" placeholder="Enter score" value="" class="form-control" />
+              </div>
+              <div class="form-group col-md-12">
+                <button class="btn btn-danger">Cancel</button>
+                <button class="btn btn-primary">Save</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for Risk level  -->
+  <div class="modal pay-modal fade" id="editRisk-level" tabindex="-1" aria-labelledby="staticBackdropLabel"
+    aria-modal="true" role="dialog">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">
+            Edit Risk level
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="row">
+              <div class="form-group col-md-12">
+                <label>Total Sc</label>
+                <input type="text" placeholder="Enter total sc" value="" class="form-control" />
+              </div>
+              <div class="form-group col-md-12">
+                <label>Risk level</label>
+                <textarea name="" id="" class="form-control" rows="3"></textarea>
+              </div>
+              <div class="form-group col-md-12">
+                <label>Decision</label>
+                <textarea name="" id="" class="form-control" rows="3"></textarea>
+              </div>
+              <div class="form-group col-md-12">
+                <button class="btn btn-danger">Cancel</button>
+                <button class="btn btn-primary">Save</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Add rule set -->
+  <div class="modal pay-modal fade" id="addRule-set" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="mb-0">Rule set : Email Rule</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="row mb-4">
+              <div class="form-group col-md-4">
+                <label>Rule ID</label>
+                <input type="text" placeholder="Enter rule id" value="ER-0001" class="form-control">
+              </div>
+              <div class="form-group col-md-4">
+                <label>Rule name</label>
+                <input type="text" placeholder="Enter rule name" value="Breach Count" class="form-control">
+              </div>
+              <div class="form-group col-md-4">
+                <label>Score</label>
+                <input type="text" placeholder="Enter score" value="30" class="form-control">
+              </div>
+              <div class="form-group col-md-12">
+                <label>Description</label>
+                <input type="text" placeholder="Enter description" value="Breach count description that could be long"
+                  class="form-control">
+              </div>
+            </div>
+            <!-- row end -->
+            <div class="text-center mdHedg-txt mb-5">
+              <h1 class="text-primary"><span> Available Conditions </span></h1>
+            </div>
+            <div class="row mb-4 align-items-end">
+              <div class="form-group col-lg col-md-4">
+                <label>Entity</label>
+                <div class="custom-select">
+                  <select class="form-control">
+                    <option label="User" value="">User</option>
+                    <option label="Card Transaction" value="">Card Transaction</option>
+                    <option label="Merchant" value="">Merchant</option>
+                  </select>
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+              <div class="form-group col-lg col-md-4">
+                <label>Sub Entity</label>
+                <div class="custom-select">
+                  <select class="form-control">
+                    <option label="Phone" value="">Phone</option>
+                    <option label="Email" value="">Email</option>
+                    <option label="Address" value="">Address</option>
+                  </select>
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+              <div class="form-group col-lg col-md-4">
+                <label>Sub-Sub Entity</label>
+                <div class="custom-select">
+                  <select class="form-control">
+                    <option label="History" value="">History</option>
+                    <option label="Breach" value="">Breach</option>
+                    <option label="Region" value="">Region</option>
+                  </select>
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+              <div class="form-group col-lg col-md-4">
+                <label>Operator</label>
+                <div class="custom-select">
+                  <select class="form-control">
+                    <option label="Equals" value="">Equals</option>
+                    <option label="Less Than" value="">Less Than</option>
+                    <option label="Higher Than" value="">Higher Than</option>
+                  </select>
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+              <div class="form-group col-lg col-md-4">
+                <label>Check value</label>
+                <input type="text" class="form-control" placeholder="Enter check value" value="2" name="" />
+              </div>
+              <div class="form-group col-lg col-md-4">
+                <button class="btn btn-success">Add <i class="fa-regular fa-square-plus"></i></button>
+              </div>
+            </div>
+            <!-- row end -->
+            <div class="text-center mdHedg-txt mb-5">
+              <h1 class="text-primary"><span> Added Conditions </span></h1>
+            </div>
+            <div class="row mb-4 align-items-end justify-content-end">
+              <div class="form-group col-lg-2 col-md-4">
+                <div class="custom-select">
+                  <select class="form-control">
+                    <option label="User" value="">User</option>
+                    <option label="Card Transaction" value="">Card Transaction</option>
+                    <option label="Merchant" value="">Merchant</option>
+                  </select>
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+              <div class="form-group col-lg-2 col-md-4">
+                <div class="custom-select">
+                  <select class="form-control">
+                    <option label="Phone" value="">Phone</option>
+                    <option label="Email" value="">Email</option>
+                    <option label="Address" value="">Address</option>
+                  </select>
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+              <div class="form-group col-lg-2 col-md-4">
+                <div class="custom-select">
+                  <select class="form-control">
+                    <option label="History" value="">History</option>
+                    <option label="Breach" value="">Breach</option>
+                    <option label="Region" value="">Region</option>
+                  </select>
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+              <div class="form-group col-lg-2 col-md-4">
+                <div class="custom-select">
+                  <select class="form-control">
+                    <option label="Equals" value="">Equals</option>
+                    <option label="Less Than" value="">Less Than</option>
+                    <option label="Higher Than" value="">Higher Than</option>
+                  </select>
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+              <div class="form-group col-lg-2 col-md-4">
+                <input type="text" class="form-control" placeholder="Enter check value" value="2" name="" />
+              </div>
+            </div>
+            <!-- row end -->
+            <div class="row mb-4 align-items-end justify-content-end">
+              <div class="form-group col-lg-2 col-md-4">
+                <div class="custom-select">
+                  <select class="form-control">
+                    <option label="And" value="">And</option>
+                    <option label="Or" value="">Or</option>
+                  </select>
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+              <div class="form-group col-lg-2 col-md-4">
+                <div class="custom-select">
+                  <select class="form-control">
+                    <option label="User" value="">User</option>
+                    <option label="Card Transaction" value="">Card Transaction</option>
+                    <option label="Merchant" value="">Merchant</option>
+                  </select>
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+              <div class="form-group col-lg-2 col-md-4">
+                <div class="custom-select">
+                  <select class="form-control">
+                    <option label="Phone" value="">Phone</option>
+                    <option label="Email" value="">Email</option>
+                    <option label="Address" value="">Address</option>
+                  </select>
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+              <div class="form-group col-lg-2 col-md-4">
+                <div class="custom-select">
+                  <select class="form-control">
+                    <option label="History" value="">History</option>
+                    <option label="Breach" value="">Breach</option>
+                    <option label="Region" value="">Region</option>
+                  </select>
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+              <div class="form-group col-lg-2 col-md-4">
+                <div class="custom-select">
+                  <select class="form-control">
+                    <option label="Equals" value="">Equals</option>
+                    <option label="Less Than" value="">Less Than</option>
+                    <option label="Higher Than" value="">Higher Than</option>
+                  </select>
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+              <div class="form-group col-lg-2 col-md-4">
+                <input type="text" class="form-control" placeholder="Enter check value" value="2" name="" />
+              </div>
+            </div>
+            <!-- row end -->
+            <div class="form-group col-md-12 text-end">
+              <button class="btn btn-danger">Cancel</button>
+              <button class="btn btn-primary">Save</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal Decision creation  -->
+  <div class="modal pay-modal fade" id="decisionCreate-set" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="mb-0">Rule set : Email Rule</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="row mb-4">
+              <div class="form-group col-md-4">
+                <label>Risk Level ID</label>
+                <input type="text" placeholder="Enter risk id" value="D-ER-0001" class="form-control">
+              </div>
+              <div class="form-group col-md-4">
+                <label>Risk Level name</label>
+                <input type="text" placeholder="Enter risk name" value="Old genuine account" class="form-control">
+              </div>
+              <div class="form-group col-md-2">
+                <label>From Score</label>
+                <input type="text" placeholder="Enter score" value="30" class="form-control">
+              </div>
+              <div class="form-group col-md-2">
+                <label>To Score</label>
+                <input type="text" placeholder="Enter score" value="30" class="form-control">
+              </div>
+              <div class="form-group col-md-12">
+                <label>Description</label>
+                <input type="text" placeholder="Enter description" value="Breach count description that could be long"
+                  class="form-control">
+              </div>
+            </div>
+            <!-- row end -->
+            <div class="text-center mdHedg-txt mb-5">
+              <h1 class="text-primary"><span>Decision</span></h1>
+            </div>
+            <div class="row mb-4 justify-content-between">
+              <div class="col-lg-5 col-md-12">
+                <div class="row align-items-end">
+                  <div class="form-group col-md-5">
+                    <label>Entity</label>
+                    <div class="custom-select">
+                      <select class="form-control">
+                        <option label="User status" value="">User status</option>
+                        <option label="Card Transaction" value="">Card Transaction</option>
+                        <option label="Merchant" value="">Merchant</option>
+                      </select>
+                      <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                  </div>
+                  <div class="form-group col text-center">=</div>
+                  <div class="form-group col-md-5">
+                    <label>Status</label>
+                    <div class="custom-select">
+                      <select class="form-control">
+                        <option label="Accept" value="">Accept</option>
+                        <option label="Reject" value="">Reject</option>
+                        <option label="Reffer" value="">Reffer</option>
+                      </select>
+                      <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <div class="row align-items-end">
+                  <div class="form-group col-md">
+                    <label>Operator</label>
+                    <div class="custom-select">
+                      <select class="form-control">
+                        <option label="Equals" value="">Equals</option>
+                        <option label="Less Than" value="">Less Than</option>
+                        <option label="Higher Than" value="">Higher Than</option>
+                      </select>
+                      <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                  </div>
+                  <div class="form-group col-md">
+                    <label>Check value</label>
+                    <input type="text" class="form-control" placeholder="Enter check value" value="2" name="" />
+                  </div>
+                  <div class="form-group col-md">
+                    <button class="btn btn-success">Add <i class="fa-regular fa-square-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- row end -->
+            <div class="text-center mdHedg-txt mb-5">
+              <h1 class="text-primary"><span> Added Conditions</span></h1>
+            </div>
+            <div class="row mb-4 align-items-end justify-content-between">
+              <div class="col-lg-5 col-md-12">
+                  <div class="row align-items-end">
+                    <div class="form-group col text-center">If</div>
+                    <div class="form-group col-md-5">
+                      <div class="custom-select">
+                        <select class="form-control">
+                          <option label="Accept" value="">Accept</option>
+                          <option label="Reject" value="">Reject</option>
+                          <option label="Reffer" value="">Reffer</option>
+                        </select>
+                        <i class="fa-solid fa-angle-down"></i>
+                      </div>
+                    </div>
+                    <div class="form-group col-md-5">
+                      <div class="custom-select">
+                        <select class="form-control">
+                          <option label="Phone" value="">Phone</option>
+                          <option label="Email" value="">Email</option>
+                          <option label="Address" value="">Address</option>
+                        </select>
+                        <i class="fa-solid fa-angle-down"></i>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-6 col-md-12">
+                  <div class="row align-items-end">
+                    <div class="form-group col text-center">Then</div>
+                    <div class="form-group col-md-5">
+                      <div class="custom-select">
+                        <select class="form-control">
+                          <option label="Run" value="">Run</option>
+                          <option label="Stop" value="">Stop</option>
+                        </select>
+                        <i class="fa-solid fa-angle-down"></i>
+                      </div>
+                    </div>
+                    <div class="form-group col-md-5">
+                      <div class="custom-select">
+                        <select class="form-control">
+                          <option label="Email Rule" value="">Email Rule</option>
+                          <option label="Device Rule" value="">Device Rule</option>
+                          <option label="IP Rule" value="">IP Rule</option>
+                          <option label="Geo Rule" value="">Geo Rule</option>
+                          
+                        </select>
+                        <i class="fa-solid fa-angle-down"></i>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <!-- row end -->
+            <div class="form-group col-md-12 text-end">
+              <button class="btn btn-danger">Cancel</button>
+              <button class="btn btn-primary">Save</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../assets/lib/bs5/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- fontawesome js start -->
+  <script src="../assets/lib/fw/fontawesome.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  <script src="../assets/js/layout.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".btnDlt-alert").on("click", function () {
+        swal({
+          title: "Are you sure?",
+          text: "Once deleted, you will not be able to recover this Strategies!",
+          icon: "warning",
+          buttons: true,
+          dangerMode: true,
+        }).then((willDelete) => {
+          if (willDelete) {
+            swal("Poof! Your Strategies has been deleted!", {
+              icon: "success",
+            });
+          } else {
+            swal("Your Strategies file is safe!");
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

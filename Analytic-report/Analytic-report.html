@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pay-secure</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/icon/favicon.ico">
+    <link rel="stylesheet" href="../assets/style/css/frontpage.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- date range css start -->
+    <!-- <link href="../assets/lib/date-rangepicker/css/plugins.bundle.css" rel="stylesheet" type="text/css"/> -->
+    <!-- <link href="../assets/lib/date-rangepicker/css/style.bundle.css" rel="stylesheet" type="text/css"/> -->
+</head>
+
+<body class="">
+    <header class="top-header">
+        <div class="leftmob-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="left-logo">
+            <a href="../Dashboard/Dashboard-page.html">
+                <img src="../assets/images/icon/PaySecure-logo01.png" alt="" />
+            </a>
+        </div>
+        <div class="right-profile">
+            <div class="user-profile">
+                <div class="profile-name">DB</div>
+                <div class="profile-fullname">
+                    <p>dbadmin1</p>
+                    <div class="dropdown admin-box">
+                        <a href="javascript:void(0)" class="superadmin-dropdown" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Super Admin <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu admin-list" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-regular fa-user"></i>
+                                    <span>Profile</span></a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-regular fa-envelope"></i>
+                                    <span>My Messages</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-solid fa-lock"></i>
+                                    <span>Lock Screen</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../Change-password/Change-password.html">
+                                    <i class="fa-solid fa-key"></i>
+                                    <span>Change Password</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+    <section class="pay-mainarea">
+        <div class="left-menubar">
+            <div class="sidemenu-close">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+            <ul class="mainmenu-list">
+                <li class="">
+                    <a href="../Dashboard/Dashboard-page.html">
+                        <i class="fa-solid fa-table-cells-large"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../Manage-roles/Manage-Roles.html">
+                        <i class="fa-regular fa-user"></i>
+                        <span>Manage Roles</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../Global-setting/Global-setting.html">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Global Setting</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../Merchant-limits/Merchant-Limits.html">
+                        <i class="fa-solid fa-suitcase"></i>
+                        <span>Merchant limits</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="../Banks/Bank-page.html">
+                        <i class="fa-solid fa-building-columns"></i>
+                        <span>Banks</span>
+                    </a>
+                </li>
+                <li class="inr-list">
+                    <a href="javascript:void(0)" class="inr-link">
+                        <i class="fa-solid fa-box"></i>
+                        <span>Charges</span>
+                        <i class="fa-solid fa-angle-down dwn-arr"></i>
+                    </a>
+                    <ul class="innerMenu-list">
+                        <li>
+                            <a href="../Charges/Bank-charges.html">
+                                <span>Bank</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Charges/Merchants-charges.html">
+                                <span>Merchant</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../Transactions/Transactions.html">
+                        <i class="fa-regular fa-credit-card"></i>
+                        <span>Transactions</span>
+                    </a>
+                </li>
+                <li class="inr-list">
+                    <a href="javascript:void(0)" class="inr-link">
+                      <i class="fa-regular fa-user"></i>
+                      <span>Profile Intelligence</span>
+                      <i class="fa-solid fa-angle-down dwn-arr"></i>
+                    </a>
+                    <ul class="innerMenu-list">
+                      <li>
+                        <a href="../Profile-intelligence/Strategies.html">
+                          <span>Strategies</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="../Profile-intelligence/Rule-Sets.html">
+                          <span>RuleSets</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="../Profile-intelligence/Decision-Matrix.html">
+                          <span>Decision Matrix</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                <li class="active">
+                    <a href="../Analytic-report/Analytic-report.html">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <span>Analytic Report</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../Merchants/Merchants.html">
+                        <i class="fa-regular fa-clipboard"></i>
+                        <span>Merchants</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../MID-Limits/MID-Limits.html">
+                        <i class="fa-brands fa-codepen"></i>
+                        <span>MID Limits</span>
+                    </a>
+                </li>
+                <li class="inr-list">
+                    <a href="javascript:void(0)" class="inr-link">
+                        <i class="fa-solid fa-box"></i>
+                        <span>Blockings</span>
+                        <i class="fa-solid fa-angle-down dwn-arr"></i>
+                    </a>
+                    <ul class="innerMenu-list">
+                        <li>
+                            <a href="../Blockings/MID.html">
+                                <span>MID</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Blockings/BIN.html">
+                                <span>BIN</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Blockings/CARD.html">
+                                <span>Card</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Blockings/Customer-profile.html">
+                                <span>Customer Profile</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Blockings/Country.html">
+                                <span>Country</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../Settlements/Settlements.html">
+                        <i class="fa-regular fa-square-check"></i>
+                        <span>Settlements</span>
+                    </a>
+                </li>
+                <li class="inr-list">
+                    <a href="javascript:void(0)" class="inr-link">
+                        <i class="fa-solid fa-box"></i>
+                        <span>Utility</span>
+                        <i class="fa-solid fa-angle-down dwn-arr"></i>
+                    </a>
+                    <ul class="innerMenu-list pdlfm">
+                        <li>
+                            <a href="#">
+                                <span>Email Risk Analysis</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Manual-refunds/Manual-refunds.html">
+                                <span>Manual Refund</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Process Settlement / Chargeback</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Utility/Profile-scoring.html">
+                                <span>Profile Scoring</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="inr-list">
+                    <a href="javascript:void(0)" class="inr-link">
+                        <i class="fa-solid fa-list-ol"></i>
+                        <span>Scoring</span>
+                        <i class="fa-solid fa-angle-down dwn-arr"></i>
+                    </a>
+                    <ul class="innerMenu-list pdlfm">
+                        <li>
+                            <a href="../Scoring/Fraud-scoring.html">
+                                <span>Fraud Scoring</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Scoring/Customer-profile.html">
+                                <span>Customer profile</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Scoring/Trust-level.html">
+                                <span>Trust level</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="inr-list">
+                    <a href="javascript:void(0)" class="inr-link">
+                        <i class="fa-solid fa-yin-yang"></i>
+                        <span>P2p</span>
+                        <i class="fa-solid fa-angle-down dwn-arr"></i>
+                    </a>
+                    <ul class="innerMenu-list pdlfm">
+                        <li>
+                            <a href="../p2p/p2p-Dashboard.html">
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../p2p/Top-deposite.html">
+                                <span>Top Deposite</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../p2p/Top-withdrawal.html">
+                                <span>Top Withdrawal</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../p2p/settlements.html">
+                                <span>Settlements</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../p2p/Transections.html">
+                                <span>Transactions</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <span>Alert Config</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- left side menu end  -->
+        <div class="right-sidedata">
+            <div class="heading-bartitle">
+                <div class="left-bar">
+                    <h1>Analytic Report</h1>
+                    <a href="#"><i class="fa-solid fa-table-cells-large"></i>
+                        <span>Dashboard</span></a>
+                </div>
+                <div class="right-bar"></div>
+            </div>
+            <!-- heading bar end -->
+            <div class="py-main-contain">
+                <div class="row pagetitle-row">
+                    <div class="col">
+                        <div class="titleHead-colm">
+                            <i class="fa-solid fa-filter"></i>
+                            <h2>Analytic Report</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card dash-cardbox">
+                            <div class="card-body">
+                                <form action="">
+                                    <div class="row">
+                                        <h1 class="mb-4">Filter</h1>
+                                        <div class="form-group col-xl-3 col-lg-4 col-md-6">
+                                            <label>Group By</label>
+                                            <div class="custom-select">
+                                                <select id="group_by" class="form-control form-control-sm">
+                                                    <option value="bankid">Bankid</option>
+                                                    <option value="bankmid">Bankmid</option>
+                                                    <option value="binNumber">BinNumber</option>
+                                                    <option value="currency">Currency</option>
+                                                    <option value="day">Day</option>
+                                                    <option value="dayInYear">DayInYear</option>
+                                                    <option value="dayname">Dayname</option>
+                                                    <option value="emailId">EmailId</option>
+                                                    <option value="errorMsg">ErrorMsg</option>
+                                                    <option value="hour">Hour</option>
+                                                    <option value="lastAction">LastAction</option>
+                                                    <option value="merchantId">MerchantId</option>
+                                                    <option value="profileId">ProfileId</option>
+                                                    <option value="weekInMonth">WeekInMonth</option>
+                                                    <option value="weekInYear">WeekInYear</option>
+                                                    <option value="year">Year</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-down"></i>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-xl-2 col-lg-4 col-md-6">
+                                            <label>Select Merchant</label>
+                                            <div class="custom-select">
+                                                <select id="mid" class="form-control">
+                                                    <option value="-1">Select Merchant</option>
+                                                    <option value="5">aaaaaaaaaaaaaaaa</option>
+                                                    <option value="4">abccd</option>
+                                                    <option value="6">Clothing</option>
+                                                    <option value="1">test</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-down"></i>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-xl-2 col-lg-4 col-md-6">
+                                            <label>Select Bank</label>
+                                            <div class="custom-select">
+                                                <select class="form-control" id="bankname">
+                                                    <option value="">Select Bank</option>
+                                                    <option value="abanks">abanks</option>
+                                                    <option value="abanksnew">abanksnew</option>
+                                                    <option value="aleta">aleta</option>
+                                                    <option value="erompay">erompay</option>
+                                                    <option value="hdfc">hdfc</option>
+                                                    <option value="interpay">interpay</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-down"></i>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-xl-2 col-lg-4 col-md-6">
+                                            <label>Select Currency</label>
+                                            <div class="custom-select">
+                                                <select id="currency" class="form-control">
+                                                    <option value="">Select Currency</option>
+                                                    <option value="EUR">EUR</option>
+                                                    <option value="INR">INR</option>
+                                                    <option value="JPA">JPA</option>
+                                                    <option value="USD">USD</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-down"></i>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-xl-3 col-lg-4 col-md-6">
+                                            <label>Amount From - To</label>
+                                            <div class="d-flex align-items-center">
+                                                <input type="text" class="form-control" placeholder="Amount from"
+                                                    name="" />
+                                                <span class="d-inline-block mx-1"> - </span>
+                                                <input type="text" class="form-control" placeholder="Amount to"
+                                                    name="" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-xl-2 col-lg-4 col-md-6">
+                                            <label>Date Range</label>
+                                            <input type="text" class="form-control" id="analy-daterange" placeholder="Pick date rage"
+                                                name="" />
+                                        </div>
+                                        <div class="form-group col-xl-2 col-lg-4 col-md-6">
+                                            <label>Select Status</label>
+                                            <div class="custom-select">
+                                                <select class="form-control" id="status">
+                                                    <option value="">Select Status</option>
+                                                    <option value="CHARGE_BACK">CHARGE_BACK</option>
+                                                    <option value="PAID">PAID</option>
+                                                    <option value="PAYMENT_FAILED">PAYMENT_FAILED</option>
+                                                    <option value="PAYMENT_IN_PROCESS">PAYMENT_IN_PROCESS</option>
+                                                    <option value="REFUND_FAILED">REFUND_FAILED</option>
+                                                    <option value="REFUND_IN_PROCESS">REFUND_IN_PROCESS</option>
+                                                    <option value="REFUNDED">REFUNDED</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-down"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group col-xl-3 col-lg-4 col-md-6">
+                                            <label>Sort By</label>
+                                            <div class="custom-select">
+                                                <select id="sortby"
+                                                    class="form-control">
+                                                    <option value="">Sort By</option>
+                                                    <option value="all_Attempt">All_Attempt</option>
+                                                    <option value="amount_Approved">Amount_Approved</option>
+                                                    <option value="amount_ChrgBack">Amount_ChrgBack</option>
+                                                    <option value="amount_Refunded">Amount_Refunded</option>
+                                                    <option value="amount_Rejected">Amount_Rejected</option>
+                                                    <option value="aprvd_Attempt">Aprvd_Attempt</option>
+                                                    <option value="failed_Attempt">Failed_Attempt</option>
+                                                    <option value="totalAmount">TotalAmount</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-down"></i>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-xl-3 col-lg-4 col-md-6">
+                                            <label>Short Order</label>
+                                            <div class="custom-select">
+                                                <select id="sortorder" class="form-control">
+                                                    <option value="">Sort Order</option>
+                                                    <option value="ASC">Ascending</option>
+                                                    <option value="DESC">Descending</option>
+                                                    </select>
+                                                <i class="fa-solid fa-angle-down"></i>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-xl-2 col-lg-4 col-md-6">
+                                            <label class="invisible">btn</label>
+                                            <button class="btn btn-primary d-block">Submit</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- col end -->
+                </div>
+                <!-- row end -->
+                <div class="table-responsive analutics-reporttable">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">ALL ATTEMPT</th>
+                                <th scope="col">APRVD ATTEMPT</th>
+                                <th scope="col">
+                                    FAILED ATTEMPT
+                                </th>
+                                <th scope="col">
+                                    TOTALAMOUNT
+                                </th>
+                                <th scope="col">AMOUNT APPROVED</th>
+                                <th scope="col">AMOUNT REFUNDED</th>
+                                <th scope="col">AMOUNT REJECTED</th>
+                                <th scope="col">AMOUNT CHRGBACK</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="anay-id">
+                                    <span>23</span>
+                                </td>
+                                <td>
+                                    <span>2</span>
+                                </td>
+                                <td>
+                                    <span>0</span>
+                                </td>
+                                <td >
+                                    <span>2</span>
+                                </td>
+                                <td >
+                                    <span>10</span>
+                                </td>
+                                <td >
+                                    <span>0</span>
+                                </td>
+                                <td >
+                                    <span>0</span>
+                                </td>
+                                <td >
+                                    <span>10</span>
+                                </td>
+                                <td >
+                                    <span>0</span>
+                                </td>
+                            </tr>
+                            <!-- row end -->
+                            <tr>
+                                <td class="anay-id">
+                                    <span>23</span>
+                                </td>
+                                <td>
+                                    <span>2</span>
+                                </td>
+                                <td>
+                                    <span>0</span>
+                                </td>
+                                <td >
+                                    <span>2</span>
+                                </td>
+                                <td >
+                                    <span>10</span>
+                                </td>
+                                <td >
+                                    <span>0</span>
+                                </td>
+                                <td >
+                                    <span>0</span>
+                                </td>
+                                <td >
+                                    <span>10</span>
+                                </td>
+                                <td >
+                                    <span>0</span>
+                                </td>
+                            </tr>
+                            <!-- row end -->
+                            <tr>
+                                <td class="anay-id">
+                                    <span>23</span>
+                                </td>
+                                <td>
+                                    <span>2</span>
+                                </td>
+                                <td>
+                                    <span>0</span>
+                                </td>
+                                <td >
+                                    <span>2</span>
+                                </td>
+                                <td >
+                                    <span>10</span>
+                                </td>
+                                <td >
+                                    <span>0</span>
+                                </td>
+                                <td >
+                                    <span>0</span>
+                                </td>
+                                <td >
+                                    <span>10</span>
+                                </td>
+                                <td >
+                                    <span>0</span>
+                                </td>
+                            </tr>
+                            <!-- row end -->
+                            <tr>
+                                <td class="anay-id">
+                                    <span>23</span>
+                                </td>
+                                <td>
+                                    <span>2</span>
+                                </td>
+                                <td>
+                                    <span>0</span>
+                                </td>
+                                <td >
+                                    <span>2</span>
+                                </td>
+                                <td >
+                                    <span>10</span>
+                                </td>
+                                <td >
+                                    <span>0</span>
+                                </td>
+                                <td >
+                                    <span>0</span>
+                                </td>
+                                <td >
+                                    <span>10</span>
+                                </td>
+                                <td >
+                                    <span>0</span>
+                                </td>
+                            </tr>
+                            <!-- row end -->
+                            <tr>
+                                <td class="anay-id">
+                                    <span>23</span>
+                                </td>
+                                <td>
+                                    <span>2</span>
+                                </td>
+                                <td>
+                                    <span>0</span>
+                                </td>
+                                <td >
+                                    <span>2</span>
+                                </td>
+                                <td >
+                                    <span>10</span>
+                                </td>
+                                <td >
+                                    <span>0</span>
+                                </td>
+                                <td >
+                                    <span>0</span>
+                                </td>
+                                <td >
+                                    <span>10</span>
+                                </td>
+                                <td >
+                                    <span>0</span>
+                                </td>
+                            </tr>
+                            <!-- row end -->
+                            <tr>
+                                <td class="anay-id">
+                                    <span>23</span>
+                                </td>
+                                <td>
+                                    <span>2</span>
+                                </td>
+                                <td>
+                                    <span>0</span>
+                                </td>
+                                <td >
+                                    <span>2</span>
+                                </td>
+                                <td >
+                                    <span>10</span>
+                                </td>
+                                <td >
+                                    <span>0</span>
+                                </td>
+                                <td >
+                                    <span>0</span>
+                                </td>
+                                <td >
+                                    <span>10</span>
+                                </td>
+                                <td >
+                                    <span>0</span>
+                                </td>
+                            </tr>
+                            <!-- row end -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- right side data end -->
+    </section>
+    <!-- Button trigger modal -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../assets/lib/bs5/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- fontawesome js start -->
+    <script src="../assets/lib/fw/fontawesome.js"></script>
+    <!-- js for date range -->
+    <!-- <script src="../assets/lib/date-rangepicker/js/plugins.bundle.js"></script>
+    <script src="../assets/lib/date-rangepicker/js/scripts.bundle.js"></script> -->
+
+    <script src="../assets/js/layout.js"></script>
+</body>
+
+</html>
