@@ -289,6 +289,20 @@ body {
       color: $white;
     }
   }
+  &.btn-outline-warning{
+    background-color: #fdf1e7;
+    color: $orange;
+    border: 1px solid $orange;
+    &:hover {
+      background-color: $orange;
+      color: $white;
+    }
+
+    &.active {
+      background-color: $orange;
+      color: $white;
+    }
+  }
 
   &.btn-outline-primary {
     color: $blue;
