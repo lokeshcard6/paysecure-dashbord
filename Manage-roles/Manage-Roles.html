@@ -323,6 +323,7 @@
                                         <th scope="col">USERNAME</th>
                                         <th scope="col">ROLE</th>
                                         <th scope="col"></th>
+                                        <th scope="col">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -336,29 +337,8 @@
                                         <td>
                                             <button class="btn btn-danger btn-sm"><i class="fa-solid fa-xmark"></i></button>
                                         </td>
-                                    </tr>
-                                    <!-- row end -->
-                                    <tr>
-                                        <td class="">
-                                            <input type="text" class="form-control" value="dbuser1"  placeholder="" name="" />
-                                        </td>
                                         <td>
-                                            <span>MERCHANT</span>
-                                        </td>
-                                        <td>
-                                            <button class="btn btn-danger btn-sm"><i class="fa-solid fa-xmark"></i></button>
-                                        </td>
-                                    </tr>
-                                    <!-- row end -->
-                                    <tr>
-                                        <td class="">
-                                            <input type="text" class="form-control" value="dbuser1"  placeholder="" name="" />
-                                        </td>
-                                        <td>
-                                            <span>MERCHANT</span>
-                                        </td>
-                                        <td>
-                                            <button class="btn btn-danger btn-sm"><i class="fa-solid fa-xmark"></i></button>
+                                            <button type="button" class="btn btn-warning " data-bs-toggle="modal" data-bs-target="#ResetPassword-modal"><i class="fa-regular fa-pen-to-square me-1"></i>Reset Password</button>
                                         </td>
                                     </tr>
                                     <!-- row end -->
@@ -372,6 +352,9 @@
                                         <td>
                                             <button class="btn btn-danger btn-sm"><i class="fa-solid fa-xmark"></i></button>
                                         </td>
+                                        <td>
+                                            <button type="button" class="btn btn-warning " data-bs-toggle="modal" data-bs-target="#ResetPassword-modal"><i class="fa-regular fa-pen-to-square me-1"></i>Reset Password</button>
+                                        </td>
                                     </tr>
                                     <!-- row end -->
                                     <tr>
@@ -383,6 +366,39 @@
                                         </td>
                                         <td>
                                             <button class="btn btn-danger btn-sm"><i class="fa-solid fa-xmark"></i></button>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-warning " data-bs-toggle="modal" data-bs-target="#ResetPassword-modal"><i class="fa-regular fa-pen-to-square me-1"></i>Reset Password</button>
+                                        </td>
+                                    </tr>
+                                    <!-- row end -->
+                                    <tr>
+                                        <td class="">
+                                            <input type="text" class="form-control" value="dbuser1"  placeholder="" name="" />
+                                        </td>
+                                        <td>
+                                            <span>MERCHANT</span>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-danger btn-sm"><i class="fa-solid fa-xmark"></i></button>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-warning " data-bs-toggle="modal" data-bs-target="#ResetPassword-modal"><i class="fa-regular fa-pen-to-square me-1"></i>Reset Password</button>
+                                        </td>
+                                    </tr>
+                                    <!-- row end -->
+                                    <tr>
+                                        <td class="">
+                                            <input type="text" class="form-control" value="dbuser1"  placeholder="" name="" />
+                                        </td>
+                                        <td>
+                                            <span>MERCHANT</span>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-danger btn-sm"><i class="fa-solid fa-xmark"></i></button>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-warning " data-bs-toggle="modal" data-bs-target="#ResetPassword-modal"><i class="fa-regular fa-pen-to-square me-1"></i>Reset Password</button>
                                         </td>
                                     </tr>
                                     <!-- row end -->
@@ -446,6 +462,33 @@
             </div>
         </div>
     </div>
+
+
+     <!-- Reset password Modal -->
+     <div class="modal pay-modal fade" id="ResetPassword-modal" tabindex="-1" aria-labelledby="staticBackdropLabel"
+     aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <h5 class="modal-title" id="staticBackdropLabel">Reset Password</h5>
+                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body">
+                 <form action="">
+                     <div class="row">
+                         <div class="form-group col-md-12">
+                             <label>New Password</label>
+                             <input type="text" placeholder="enter password" class="form-control" />
+                         </div>
+                         <div class="form-group col-md-12">
+                             <button class="btn btn-primary">Update</button>
+                         </div>
+                     </div>
+                 </form>
+             </div>
+         </div>
+     </div>
+ </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../assets/lib/bs5/dist/js/bootstrap.bundle.min.js"></script>
