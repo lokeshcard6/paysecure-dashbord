@@ -257,7 +257,11 @@ body {
     font-size: 12px;
     line-height: 15px;
   }
-
+  &.btn-medium{
+    padding: 5px 10px;
+    font-size: 13px;
+    line-height: 16px;
+  }
   &:focus {
     box-shadow: none;
   }

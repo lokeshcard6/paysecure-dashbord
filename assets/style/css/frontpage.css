@@ -9877,6 +9877,11 @@ body {
   font-size: 12px;
   line-height: 15px;
 }
+.btn.btn-medium {
+  padding: 5px 10px;
+  font-size: 13px;
+  line-height: 16px;
+}
 .btn:focus {
   box-shadow: none;
 }
@@ -11423,6 +11428,51 @@ label {
   background-size: 13px;
 }
 
+.mainFraud-box .card .card-header {
+  padding: 8px 12px;
+}
+.mainFraud-box .card .card-body .row [class*=col] {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+.mainFraud-box .card .card-body .row.titleFRd h2, .mainFraud-box .card .card-body .row.titleFRd .h2 {
+  margin-bottom: 0;
+  font-size: 16px;
+  padding: 10px 12px;
+  background-color: #edf3fd;
+  border-radius: 5px;
+}
+.mainFraud-box .card .card-body .row.titleFRd h2 i, .mainFraud-box .card .card-body .row.titleFRd .h2 i {
+  width: 24px;
+  height: 24px;
+  background-color: #000;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  margin-right: 7px;
+}
+.mainFraud-box .card .card-body .row.frdInput-row {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #efefef;
+}
+.mainFraud-box .card .card-body .row.frdInput-row:last-child {
+  border-bottom: none;
+}
+
+@media only screen and (min-width: 1200px) {
+  .mainFraud-box {
+    max-width: 1200px;
+  }
+}
+@media only screen and (max-width: 1350px) {
+  .mainFraud-box {
+    max-width: 100%;
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 1200px) {
   .login-page .right-formsec .form-cardbox {
     max-width: 70%;
@@ -11503,6 +11553,9 @@ label {
   .ruleSet-boxRow .rightData-box {
     width: 100%;
   }
+  .mainFraud-box .row > * {
+    flex: 1 0 0%;
+  }
 }
 @media only screen and (max-width: 767px) {
   .top-header .left-logo a img {
@@ -11510,6 +11563,9 @@ label {
   }
   .slot-box {
     margin-bottom: 20px;
+  }
+  .mainFraud-box .row > * {
+    flex: 1 0 50%;
   }
 }
 @media only screen and (max-width: 575px) {

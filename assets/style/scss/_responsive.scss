@@ -1,3 +1,15 @@
+@media only screen and (min-width:1200px){
+    .mainFraud-box{
+        max-width:1200px;
+    }
+}
+
+@media only screen and (max-width:1350px){
+    .mainFraud-box{
+        max-width:100%;
+        width:100%;
+    }
+}
 @media only screen and (max-width:1200px){
     .login-page{
         .right-formsec{
@@ -123,6 +135,14 @@
             width:100%;
         }
     } 
+
+    .mainFraud-box{
+        .row{
+            & > *{
+                flex:1 0 0%;
+            }
+        }
+    }
 }
 @media only screen and (max-width:767px){
     .top-header{
@@ -136,6 +156,13 @@
     } 
     .slot-box{
         margin-bottom:20px;
+    }
+    .mainFraud-box{
+        .row{
+            & > *{
+                flex:1 0 50%;
+            }
+        }
     }
 }
 @media only screen and (max-width:575px){
