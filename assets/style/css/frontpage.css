@@ -9878,7 +9878,7 @@ body {
   line-height: 15px;
 }
 .btn.btn-medium {
-  padding: 5px 10px;
+  padding: 6px 10px;
   font-size: 13px;
   line-height: 16px;
 }
@@ -9889,46 +9889,48 @@ body {
   background-color: #2188d8;
   color: #fff;
 }
-.btn.btn-primary:hover {
-  background-color: #3394e0;
-}
-.btn.btn-primary.active {
+.btn.btn-primary:hover, .btn.btn-primary.active {
   background-color: #3394e0;
 }
 .btn.btn-warning {
   background-color: #fd8c2d;
   color: #fff;
 }
-.btn.btn-warning:hover {
+.btn.btn-warning:hover, .btn.btn-warning.active {
   background-color: #fd7e14;
   color: #fff;
 }
-.btn.btn-warning.active {
-  background-color: #fd7e14;
-  color: #fff;
+.btn.btn-outline-success {
+  border: 1px solid #b7d9aa;
+  background-color: #e2f8db;
+}
+.btn.btn-outline-success:hover, .btn.btn-outline-success.active {
+  background-color: #328614;
+  border-color: #328614;
 }
 .btn.btn-outline-warning {
   background-color: #fdf1e7;
   color: #fd7e14;
-  border: 1px solid #fd7e14;
+  border: 1px solid #d7a57a;
 }
-.btn.btn-outline-warning:hover {
+.btn.btn-outline-warning:hover, .btn.btn-outline-warning.active {
   background-color: #fd7e14;
   color: #fff;
+  border-color: #fd7e14;
 }
-.btn.btn-outline-warning.active {
-  background-color: #fd7e14;
-  color: #fff;
+.btn.btn-outline-danger {
+  border: 1px solid #db9ca2;
+  background-color: #ffe6e3;
+}
+.btn.btn-outline-danger:hover, .btn.btn-outline-danger.active {
+  background-color: #dc3545;
+  border-color: #dc3545;
 }
 .btn.btn-outline-primary {
   color: #2188d8;
   border: 1px solid #2188d8;
 }
-.btn.btn-outline-primary:hover {
-  background-color: #2188d8;
-  color: #fff;
-}
-.btn.btn-outline-primary.active {
+.btn.btn-outline-primary:hover, .btn.btn-outline-primary.active {
   background-color: #2188d8;
   color: #fff;
 }
@@ -9948,12 +9950,35 @@ body {
   background-color: #000;
   color: #fff;
 }
-.btn.btn-black:hover {
+.btn.btn-black:hover, .btn.btn-black.active {
   background-color: #333333;
   color: #fff;
 }
-.btn.btn-black.active {
-  background-color: #333333;
+.btn.btn-success-light {
+  background-color: #e2f8db;
+  color: #328614;
+  border: none;
+}
+.btn.btn-success-light:hover, .btn.btn-success-light.active {
+  background-color: #328614;
+  color: #fff;
+}
+.btn.btn-warning-light {
+  background-color: #fdf1e7;
+  color: #fd7e14;
+  border: none;
+}
+.btn.btn-warning-light:hover, .btn.btn-warning-light.active {
+  background-color: #fd7e14;
+  color: #fff;
+}
+.btn.btn-danger-light {
+  background-color: #ffe6e3;
+  color: #dc3545;
+  border: none;
+}
+.btn.btn-danger-light:hover, .btn.btn-danger-light.active {
+  background-color: #dc3545;
   color: #fff;
 }
 
@@ -11431,6 +11456,9 @@ label {
 .mainFraud-box .card .card-header {
   padding: 8px 12px;
 }
+.mainFraud-box .card .card-body .btn.btn-medium {
+  margin-bottom: 4px;
+}
 .mainFraud-box .card .card-body .row [class*=col] {
   padding-left: 7.5px;
   padding-right: 7.5px;
@@ -11438,9 +11466,10 @@ label {
 .mainFraud-box .card .card-body .row.titleFRd h2, .mainFraud-box .card .card-body .row.titleFRd .h2 {
   margin-bottom: 0;
   font-size: 16px;
-  padding: 10px 12px;
-  background-color: #edf3fd;
-  border-radius: 5px;
+  padding: 6px 12px;
+  background-color: #e4eaf5;
+  border-radius: 20px;
+  display: inline-block;
 }
 .mainFraud-box .card .card-body .row.titleFRd h2 i, .mainFraud-box .card .card-body .row.titleFRd .h2 i {
   width: 24px;
@@ -11462,11 +11491,6 @@ label {
   border-bottom: none;
 }
 
-@media only screen and (min-width: 1200px) {
-  .mainFraud-box {
-    max-width: 1200px;
-  }
-}
 @media only screen and (max-width: 1350px) {
   .mainFraud-box {
     max-width: 100%;
@@ -11488,6 +11512,9 @@ label {
     max-width: 230px;
     left: -180px;
   }
+  .mainFraud-box .card .card-body .row.titleFRd h2 i, .mainFraud-box .card .card-body .row.titleFRd .h2 i {
+    display: none;
+  }
 }
 @media only screen and (max-width: 1024px) {
   .summery-listdata.merchantsList-data.data-25 li {
@@ -11496,6 +11523,12 @@ label {
   .summery-listdata.merchantsList-data li {
     width: calc(50% - 15px);
     margin: 0 15px 15px 0;
+  }
+  .mainFraud-box .card .card-body .titleFRd .col-md-2 {
+    max-width: 90px;
+  }
+  .mainFraud-box .card .card-body .frdInputRow .col-md-2 {
+    max-width: 90px;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -11567,6 +11600,15 @@ label {
   .mainFraud-box .row > * {
     flex: 1 0 50%;
   }
+  .mainFraud-box .card .card-body .titleFRd {
+    display: none;
+  }
+  .mainFraud-box .card .card-body .frdInputRow {
+    margin-bottom: 24px;
+  }
+  .mainFraud-box .card .card-body .frdInputRow .col-md-2 {
+    max-width: initial;
+  }
 }
 @media only screen and (max-width: 575px) {
   .top-header .left-logo a img {
@@ -11612,6 +11654,9 @@ label {
   .centerAlert-box .alertCard .card-body h2, .centerAlert-box .alertCard .card-body .h2 {
     font-size: 18px;
     line-height: 22px;
+  }
+  .mainFraud-box .row > * {
+    flex: 1 0 100%;
   }
 }
 

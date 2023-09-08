@@ -1409,6 +1409,11 @@
             padding:8px 12px;
         }
         .card-body{
+            .btn{
+                &.btn-medium{
+                    margin-bottom:4px;
+                }
+            }
             .row{
                 [class*="col"] {
                     padding-left:7.5px;
@@ -1418,9 +1423,10 @@
                     h2{
                         margin-bottom:0;
                         font-size: 16px;
-                        padding: 10px 12px;
-                        background-color: #edf3fd;
-                        border-radius: 5px;
+                        padding: 6px 12px;
+                        background-color: #e4eaf5;
+                        border-radius: 20px;
+                        display:inline-block;
                         i{
                             width: 24px;
                             height: 24px;
