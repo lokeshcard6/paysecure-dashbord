@@ -11491,6 +11491,120 @@ label {
   border-bottom: none;
 }
 
+.apiAllowed-sec {
+  height: calc(100% - 50px);
+}
+.apiAllowed-sec .card-body .alwdApi-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 0;
+}
+.apiAllowed-sec .card-body .alwdApi-list li {
+  display: flex;
+  align-items: center;
+  background-color: #ebebeb;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.apiAllowed-sec .card-body .alwdApi-list li i {
+  margin-right: 8px;
+  font-size: 14px;
+}
+.apiAllowed-sec .card-body .alwdApi-list li:hover {
+  background-color: #dedede;
+  border-color: #dedede;
+}
+.apiAllowed-sec .card-body .alwdApi-list li p {
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 16px;
+}
+.apiAllowed-sec .card-body .alwdApi-list.allowApi-lst li {
+  background-color: #ebebeb;
+}
+.apiAllowed-sec .card-body .alwdApi-list.allowApi-lst li:hover {
+  background-color: #dedede;
+  border-color: #dedede;
+}
+.apiAllowed-sec .card-body .alwdApi-list.selectedApi-list li {
+  background-color: #c4e1f7;
+  border-color: #4ba8ef;
+}
+.apiAllowed-sec .card-body .alwdApi-list.selectedApi-list li:hover {
+  background-color: #aed6f4;
+  border-color: #aed6f4;
+}
+
+.selctMrc-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+}
+.selctMrc-list .multiselect-native-select {
+  width: 100%;
+}
+.selctMrc-list .multiselect-native-select .merchnCond {
+  width: 100% !important;
+  height: auto !important;
+  left: 0;
+}
+.selctMrc-list .multiselect-native-select .btn-group {
+  width: 100%;
+}
+.selctMrc-list .multiselect-native-select .btn-group .custom-select {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #d6e8f0;
+  padding: 8px 30px 8px 15px;
+  border-radius: 4px;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 300;
+  text-align: left;
+  z-index: 10;
+}
+.selctMrc-list .multiselect-native-select .btn-group .dropdown-menu {
+  margin-top: 40px;
+  width: 100%;
+  padding: 8px 4px;
+  z-index: 9;
+}
+.selctMrc-list .multiselect-native-select .btn-group .dropdown-menu .dropdown-item {
+  border-radius: 4px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.selctMrc-list .multiselect-native-select .btn-group .dropdown-menu .dropdown-item:last-child {
+  margin-bottom: 0;
+}
+.selctMrc-list .multiselect-native-select .btn-group .dropdown-menu .dropdown-item.active {
+  background-color: #e9f1f7;
+}
+.selctMrc-list .multiselect-native-select .btn-group .dropdown-menu .dropdown-item .form-check {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+.selctMrc-list .multiselect-native-select .btn-group .dropdown-menu .dropdown-item .form-check .form-check-input {
+  margin-right: 10px;
+  margin-top: 0;
+}
+.selctMrc-list .multiselect-native-select .btn-group .dropdown-menu .dropdown-item .form-check .form-check-label {
+  margin-bottom: 0;
+  color: #000;
+}
+.selctMrc-list i {
+  z-index: 10;
+}
+
 @media only screen and (max-width: 1350px) {
   .mainFraud-box {
     max-width: 100%;

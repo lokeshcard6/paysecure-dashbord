@@ -9,6 +9,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/icon/favicon.ico">
     <link rel="stylesheet" href="../assets/style/css/frontpage.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="../assets/lib/dragula-master/dist/dragula.min.css" rel="stylesheet" />
+    <!-- bootstrap multiselect css -->
+    <link href="../assets/lib/multi-select/bootstrap-multiselect.css" rel="stylesheet" />
+
 </head>
 
 <body class="">
@@ -304,10 +308,82 @@
                     <div class="col-md-12">
                         <div class="card dash-cardbox h-auto">
                             <div class="card-body">
+                                <!-- <div class="row">
+                                    
+                                </div> -->
                                 <form action="">
                                     <div class="row">
-                                        <div class="form-group col-md-5 mx-auto">
-                                            <label>Merchant</label>
+                                        <div class="col-md-5 col-lg-4 col-xl-3 mx-auto">
+                                            <label>Merchant Condition</label>
+                                            <!-- <div class="dropdown">
+                                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  Dropdown button
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                  <li><a class="dropdown-item" href="javascript:void(0)">
+                                                    <i class="fa-solid fa-angles-right"></i>
+                                                    Live Merchants</a></li>
+                                                  <li><a class="dropdown-item" href="#">
+                                                    <i class="fa-solid fa-angles-right"></i>
+                                                    Check while lead
+                                                  </a></li>
+                                                  <li><a class="dropdown-item" href="#">
+                                                    <i class="fa-solid fa-angles-right"></i>
+                                                    Limit update
+                                                  </a></li>
+                                                  <li><a class="dropdown-item" href="#">
+                                                    <i class="fa-solid fa-angles-right"></i>
+                                                    Change update
+                                                  </a></li>
+                                                </ul>
+                                              </div> -->
+                                            <div class="custom-select selctMrc-list">
+                                                <select class="form-control merchnCond" id="merchnCond"
+                                                    multiple="multiple">
+                                                    <option label="Live Merchants" value="1">Live Merchants</option>
+                                                    <option label="Check while lead" value="2">Check while lead</option>
+                                                    <option label="Limit update" value="3">Limit update</option>
+                                                    <option label="Change update" value="4">Change update</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-down"></i>
+                                            </div>
+                                            <!-- <div class="selctMrc-list">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault1">
+                                                    <label class="form-check-label   mb-0" for="flexCheckDefault1">
+                                                        <i class="fa-solid fa-angles-right"></i>
+                                                        Live Merchants
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault2">
+                                                    <label class="form-check-label  mb-0" for="flexCheckDefault2">
+                                                        <i class="fa-solid fa-angles-right"></i>
+                                                        Default checkbox
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault3">
+                                                    <label class="form-check-label  mb-0" for="flexCheckDefault3">
+                                                        <i class="fa-solid fa-angles-right"></i>
+                                                        Default checkbox
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault4">
+                                                    <label class="form-check-label  mb-0" for="flexCheckDefault4">
+                                                        <i class="fa-solid fa-angles-right"></i>
+                                                        Default checkbox
+                                                    </label>
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                        <div class="form-group col-md-5 col-lg-4 col-xl-3 mx-auto">
+                                            <label>Merchant Options</label>
                                             <div class="custom-select">
                                                 <select class="form-control">
                                                     <option label="Select Merchant" value="0" selected="selected">Select
@@ -327,149 +403,148 @@
                             </div>
                         </div>
                         <!-- card end -->
-                        
+
                         <div class="accordion py-accordion" id="accordionExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingOne">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne" aria-expanded="true"
-                                        aria-controls="collapseOne">
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                         Merchant Details
                                     </button>
                                 </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse"
-                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <div class="row">
                                             <div class="form-group col-md-3">
                                                 <label>Live Transaction Allowed</label>
                                                 <div class="form-check form-switch isActive-tglbtn">
-                                                    <input class="form-check-input" type="checkbox" checked="" id="flexSwitchCheckDefault">
-                                                  </div>
+                                                    <input class="form-check-input" type="checkbox" checked=""
+                                                        id="flexSwitchCheckDefault">
+                                                </div>
                                             </div>
                                         </div>
                                         <ul class="summery-listdata merchantsList-data">
                                             <li>
-                                              <p>Title : Mr.</p>
+                                                <p>Title : Mr.</p>
                                             </li>
                                             <li>
-                                              <p>Contact Name : dfhk</p>
+                                                <p>Contact Name : dfhk</p>
                                             </li>
                                             <li>
-                                              <p>Trading Business Name : test</p>
+                                                <p>Trading Business Name : test</p>
                                             </li>
                                             <li>
-                                              <p>Legal Name : test</p>
+                                                <p>Legal Name : test</p>
                                             </li>
                                             <li>
-                                              <p>Trading Address : test</p>
+                                                <p>Trading Address : test</p>
                                             </li>
                                             <li>
-                                              <p>Corporate Address : test</p>
+                                                <p>Corporate Address : test</p>
                                             </li>
                                             <li>
-                                              <p>Trading Country : AX</p>
+                                                <p>Trading Country : AX</p>
                                             </li>
                                             <li>
-                                              <p>Corporate Country : AL</p>
+                                                <p>Corporate Country : AL</p>
                                             </li>
                                             <li>
-                                              <p>Trading State : state1</p>
+                                                <p>Trading State : state1</p>
                                             </li>
                                             <li>
-                                              <p>Trading Postal Code : fgh</p>
+                                                <p>Trading Postal Code : fgh</p>
                                             </li>
                                             <li>
-                                              <p>Corporate State : state2</p>
+                                                <p>Corporate State : state2</p>
                                             </li>
                                             <li>
-                                              <p>Corporate Postal Code : fdgh</p>
+                                                <p>Corporate Postal Code : fdgh</p>
                                             </li>
                                             <li>
-                                              <p>Business Phone : gh</p>
+                                                <p>Business Phone : gh</p>
                                             </li>
                                             <li>
-                                              <p>Contact Phone : fdh</p>
+                                                <p>Contact Phone : fdh</p>
                                             </li>
                                             <li>
-                                              <p>Contact Name : dfh</p>
+                                                <p>Contact Name : dfh</p>
                                             </li>
                                             <li>
-                                              <p>Registration# : dfh</p>
+                                                <p>Registration# : dfh</p>
                                             </li>
                                             <li>
-                                              <p>Email Address : dfh</p>
+                                                <p>Email Address : dfh</p>
                                             </li>
                                             <li>
-                                              <p>Website Address : fdh1</p>
+                                                <p>Website Address : fdh1</p>
                                             </li>
                                             <li>
-                                              <p>Trading commencment date : 2022-11-25</p>
+                                                <p>Trading commencment date : 2022-11-25</p>
                                             </li>
                                             <li>
-                                              <p>Date of incorporation : 2022-11-25</p>
+                                                <p>Date of incorporation : 2022-11-25</p>
                                             </li>
                                             <li>
-                                              <p>Default Time Zone : MIT</p>
+                                                <p>Default Time Zone : MIT</p>
                                             </li>
                                             <li>
-                                              <p>Default Currency : </p>
+                                                <p>Default Currency : </p>
                                             </li>
-                                          </ul>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                        aria-expanded="false" aria-controls="collapseTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                         Account Detail
                                     </button>
                                 </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse"
-                                    aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <ul class="summery-listdata merchantsList-data">
                                             <li>
-                                              <p>Account Name : aaa</p>
+                                                <p>Account Name : aaa</p>
                                             </li>
                                             <li>
-                                              <p>Bank Routing & Identification No : bbb</p>
+                                                <p>Bank Routing & Identification No : bbb</p>
                                             </li>
                                             <li>
-                                              <p>Account # : 111</p>
+                                                <p>Account # : 111</p>
                                             </li>
                                             <li>
-                                              <p>Bank Name : cccdd</p>
+                                                <p>Bank Name : cccdd</p>
                                             </li>
                                             <li>
-                                              <p>Bank Address : ddd</p>
+                                                <p>Bank Address : ddd</p>
                                             </li>
                                             <li>
-                                              <p>Country : GU</p>
+                                                <p>Country : GU</p>
                                             </li>
                                             <li>
-                                              <p>State : fff</p>
+                                                <p>State : fff</p>
                                             </li>
                                             <li>
-                                              <p>Postal Code : 222</p>
+                                                <p>Postal Code : 222</p>
                                             </li>
                                             <li>
-                                              <p>Payment Advice : N/A</p>
+                                                <p>Payment Advice : N/A</p>
                                             </li>
                                             <li>
-                                              <p>Payment Advice Remittance : Trading Address</p>
+                                                <p>Payment Advice Remittance : Trading Address</p>
                                             </li>
-                                          </ul>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                        aria-expanded="false" aria-controls="collapseThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
                                         Services
                                     </button>
                                 </h2>
@@ -478,72 +553,72 @@
                                     <div class="accordion-body">
                                         <ul class="summery-listdata merchantsList-data">
                                             <li>
-                                              <p>Type of Cards : Credit Card, Visa, Master</p>
+                                                <p>Type of Cards : Credit Card, Visa, Master</p>
                                             </li>
-                                          </ul>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingFour">
-                                    <button class="accordion-button collapsed" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                                        aria-expanded="false" aria-controls="collapseFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
                                         Profile Estimation Data
                                     </button>
                                 </h2>
-                                <div id="collapseFour" class="accordion-collapse collapse"
-                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                    data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <ul class="summery-listdata merchantsList-data">
                                             <li>
-                                              <p>Automatic renewals or recurring transactions  : Yes</p>
+                                                <p>Automatic renewals or recurring transactions : Yes</p>
                                             </li>
                                             <li>
                                                 <p>Refund policy : Full refund</p>
-                                              </li>
-                                              <li>
-                                                <p>Days to submit refunds : 0 - 3 days</p>
-                                              </li>
-                                          </ul>
-                                          <hr>
-                                          <h3>No. of transactions limit for customers</h3>
-                                          <ul class="summery-listdata merchantsList-data data-25">
+                                            </li>
                                             <li>
-                                              <p>Hourly  : 21</p>
+                                                <p>Days to submit refunds : 0 - 3 days</p>
+                                            </li>
+                                        </ul>
+                                        <hr>
+                                        <h3>No. of transactions limit for customers</h3>
+                                        <ul class="summery-listdata merchantsList-data data-25">
+                                            <li>
+                                                <p>Hourly : 21</p>
                                             </li>
                                             <li>
                                                 <p>Daily : 131</p>
-                                              </li>
-                                              <li>
+                                            </li>
+                                            <li>
                                                 <p>Weekly : 341</p>
-                                              </li>
-                                              <li>
+                                            </li>
+                                            <li>
                                                 <p>Monthly : 1001</p>
-                                              </li>
-                                              <li>
+                                            </li>
+                                            <li>
                                                 <p>Total transaction amount : 12341</p>
-                                              </li>
-                                              <li>
+                                            </li>
+                                            <li>
                                                 <p>Per transaction amount : 1231</p>
-                                              </li>
-                                              <li>
+                                            </li>
+                                            <li>
                                                 <p>Max Attempts : 1002</p>
-                                              </li>
-                                          </ul>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingFive">
-                                    <button class="accordion-button collapsed" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseFive"
-                                        aria-expanded="false" aria-controls="collapseFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFive" aria-expanded="false"
+                                        aria-controls="collapseFive">
                                         Documents
                                     </button>
                                 </h2>
-                                <div id="collapseFive" class="accordion-collapse collapse"
-                                    aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                    data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <h1>DOWNLOAD DOCUMENTS</h1>
                                         <h3 class="mb-3">Bank Documents</h3>
@@ -552,7 +627,8 @@
                                                 <p class="mb-0"><i class="fa-regular fa-file-lines"></i> kk4.csv</p>
                                             </div>
                                             <div class="col">
-                                                <a href="#" class="btn btn-primary"><i class="fa-solid fa-download"></i> Download</a>
+                                                <a href="#" class="btn btn-primary"><i class="fa-solid fa-download"></i>
+                                                    Download</a>
                                             </div>
                                         </div>
                                         <hr>
@@ -570,6 +646,95 @@
                                             </div>
                                         </div>
                                         <hr>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        Allowed Services
+                                    </button>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <h1 class="mb-4">All API</h1>
+                                                <div class="card apiAllowed-sec">
+                                                    <div class="card-body">
+                                                        <ul class="alwdApi-list allowApi-lst">
+                                                            <li class="isDisable">
+                                                                <i class="fa-solid fa-grip-vertical"></i>
+                                                                <p>Check_Customer_TrustScore</p>
+                                                            </li>
+                                                            <li class="isDisable">
+                                                                <i class="fa-solid fa-grip-vertical"></i>
+                                                                <p>Bank Name : cccdd</p>
+                                                            </li>
+                                                            <li class="isDisable">
+                                                                <i class="fa-solid fa-grip-vertical"></i>
+                                                                <p>Check_Customer_TrustScore</p>
+                                                            </li>
+                                                            <li class="isDisable">
+                                                                <i class="fa-solid fa-grip-vertical"></i>
+                                                                <p>Bank Name : cccdd</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <h1 class="mb-4">Allowed API</h1>
+                                                <div class="card apiAllowed-sec">
+                                                    <div class="card-body">
+                                                        <ul class="alwdApi-list selectedApi-list">
+                                                            <li class="isSelected">
+                                                                <i class="fa-solid fa-grip-vertical"></i>
+                                                                <p>Check_Customer_TrustScore</p>
+                                                            </li>
+                                                            <li class="isSelected">
+                                                                <i class="fa-solid fa-grip-vertical"></i>
+                                                                <p>Check_WhiteList</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- row end  -->
+                                        <div class="text-center mt-4">
+                                            <button class="btn btn-primary">Update</button>
+                                        </div>
+                                        <!-- row end  -->
+                                        <div class="row my-5">
+                                            <div class="form-group col-md-6 d-flex align-items-center">
+                                                <label class="d-inblock me-2 mb-0">Live Transaction Allowed</label>
+                                                <input type="hidden" name="islive" ng-model="islive"
+                                                    ng-init="islive='0'" autocomplete="off"
+                                                    class="ng-pristine ng-untouched ng-valid ng-not-empty">
+                                                <div class="form-check form-switch isActive-tglbtn d-inline-block">
+                                                    <input
+                                                        class="form-check-input ng-pristine ng-untouched ng-valid ng-empty"
+                                                        type="checkbox" id="enableLive" name="enableLive"
+                                                        ng-model="enableLive" ng-click="toggleLive()">
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-6 d-flex align-items-center">
+                                                <label class="d-inblock me-2 mb-0">Check WhiteList For
+                                                    Transactions</label>
+                                                <input type="hidden" name="isWhitelist" ng-model="isWhitelist"
+                                                    ng-init="isWhitelist='1'" autocomplete="off"
+                                                    class="ng-pristine ng-untouched ng-valid ng-not-empty">
+                                                <div class="form-check form-switch isActive-tglbtn d-inline-block">
+                                                    <input
+                                                        class="form-check-input ng-pristine ng-untouched ng-valid ng-not-empty"
+                                                        type="checkbox" id="enableFlag" name="enableFlag"
+                                                        ng-model="enableFlag" ng-click="toggleFlag()">
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -583,12 +748,47 @@
     </section><!-- Button trigger modal -->
 
 
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../assets/lib/bs5/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Drag and Drop js  -->
+    <script src="../assets/lib/dragula-master/dist/dragula.min.js"></script>
+    <!-- bootstrap multiselect js -->
+    <script src="../assets/lib/multi-select/bootstrap-multiselect.js"></script>
     <!-- fontawesome js start -->
     <script src="../assets/lib/fw/fontawesome.js"></script>
 
     <script src="../assets/js/layout.js"></script>
+    <script>
+        // ================ https://www.cssscript.com/pure-javascript-drag-and-drop-library-dragula-js/ check link for more options ==================
+        dragula([document.querySelector('.allowApi-lst'),
+        document.querySelector('.selectedApi-list')], {
+            isContainer: function (el) {
+                return false;
+            },
+        });
+        // =================================================h==========  Merchant conditions dropdown ====================================================== //
+
+        // ==================   https://www.jqueryscript.net/form/jQuery-Multiple-Select-Plugin-For-Bootstrap-Bootstrap-Multiselect.html ================== //
+        $('#merchnCond').multiselect({
+            includeSelectAllOption: true,
+            nonSelectedText: "Select merchant condition",
+        });
+        // ============================= Add Toggle button in multi-select dropdown list ================================ //
+        $(".selctMrc-list .multiselect-option.dropdown-item").append('<div class="form-check form-switch"> <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault"></div>');
+        // ============= Merchant multi select dropdown opan and close js  ================== //
+        $(".selctMrc-list .multiselect").on("click", function () {
+            $(".selctMrc-list .multiselect-container").slideToggle();
+        });
+        // ============= Merchant multi select dropdown close js  ================== //
+        $(document).click(function (event) {
+            var $target = $(event.target);
+            if (!$target.closest('.multiselect').length && $('.multiselect-container').is(":visible")) {
+                $(".multiselect-container").slideUp();
+            }
+        });
+
+    </script>
 </body>
 
 </html>
